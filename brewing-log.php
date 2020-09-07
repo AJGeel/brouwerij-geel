@@ -73,7 +73,8 @@
                 <td>15</td>
                 <td>4</td>
                 <td>Hazy</td>
-                <td>Soon 👀</td>
+                <!-- <td>Soon 👀</td> -->
+                <td>2020-04-25</td>
               </tr>
               <tr>
                 <td>010</td>

@@ -414,7 +414,7 @@ function calcReadingTime() {
   let readingTime = Math.round( countWords(totalWords) / readingSpeed );
 
   // Finally, update the innerHTML of the reading time DOM element.
-  readingTimeDOM.innerHTML = calcReadingTime();
+  readingTimeDOM.innerHTML = readingTime;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
