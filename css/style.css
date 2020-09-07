@@ -435,12 +435,8 @@ footer {
   opacity: .5;
 }
 
-.footer-inner ul.inline {
+.footer-inner .inline {
   display: flex;
-}
-
-.footer-inner ul.inline > li {
-  opacity: 1;
 }
 
 .footer-inner .social {
@@ -471,7 +467,6 @@ footer {
 }
 
 .footer-inner .social svg {
-  transform: translateX(-.3em);
   transition: stroke .2s ease-in-out;
 }
 
@@ -484,12 +479,12 @@ footer {
   opacity: 1;
 }
 
-.footer-inner ul > li > a {
+.footer-inner a {
   color: var(--royal-gold-light);
   transition: color .2s ease-in-out;
 }
 
-.footer-inner ul > li > a:hover, .footer-inner ul > li > a:focus {
+.footer-inner a:hover, .footer-inner a:focus {
   color: var(--royal-gold-light);
 }
 
