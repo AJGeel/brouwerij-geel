@@ -5,10 +5,7 @@ headroom.init();
 
 const swup = new Swup();
 
-// PageLoad: execute relevant JS functions
-if (document.readyState === "complete") {
-  init();
-}
+init();
 
 function init() {
 

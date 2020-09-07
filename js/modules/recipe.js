@@ -117,8 +117,3 @@ function updateBeerHaziness() {
     hazy.className = 'hazy';
   }
 }
-
-makeListsClickable();
-addAmountListeners();
-updateSrmColour();
-updateBeerHaziness();
