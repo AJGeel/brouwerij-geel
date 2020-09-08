@@ -22,6 +22,7 @@ function init() {
   if (document.querySelectorAll('.brewing-log')[0] !== undefined) {
     // console.log('Run Brewing Log Table JS functions.');
     getStatsFromTable();
+    updateTableStats();
   }
 
   if (document.querySelectorAll('.recipe')[0] !== undefined) {

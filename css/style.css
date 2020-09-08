@@ -305,7 +305,7 @@ nav {
 }
 
 nav:hover {
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 nav.headroom--unpinned {
@@ -988,6 +988,10 @@ hr.beer {
   transition: background-color .2s ease-in-out;
 }
 
+.stat .number.percentage::after {
+  content: '%';
+}
+
 .stats .stat:hover {
   /* background-color: var(--royal-gold-select); */
 
@@ -1201,7 +1205,6 @@ table.brewing-log--more td {
   }
 
   nav {
-    padding: 0 2em;
     width: 100%;
     margin-left: 0;
   }
@@ -1224,6 +1227,11 @@ table.brewing-log--more td {
 
   nav .hide-for-mobile {
     display: none;
+  }
+
+  nav .navbar {
+    max-width: calc(1280px + 2 * 2em);
+    padding: 0 2em;
   }
 
   nav .navbar svg {
@@ -1262,7 +1270,7 @@ table.brewing-log--more td {
   }
 
   .grid--cell:nth-of-type(1) {
-    margin-right: 0;
+    margin-right: 0 !important;
     flex: 1;
     margin-bottom: 2em;
   }

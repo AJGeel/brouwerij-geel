@@ -97,20 +97,24 @@ let stats = {
 }
 
 function getStatsFromTable() {
-  tb = brewingLogTable;
+  // Check if stats have not yet been retrieved
+  if (stats.no.length === 0) {
+    tb = brewingLogTable;
 
-  for (rowNo = 1; rowNo < tb.rows.length; rowNo++) {
-    // Make DOM call to select all items within the current row
-    currentRow = tb.rows[rowNo].getElementsByTagName("td");
+    for (rowNo = 1; rowNo < tb.rows.length; rowNo++) {
+      // Make DOM call to select all items within the current row
+      currentRow = tb.rows[rowNo].getElementsByTagName("td");
 
-    // Push the respective values to the tableStats object
-    stats.no.push(currentRow[0].innerHTML);
-    stats.brewName.push(currentRow[1].innerHTML);
-    stats.styles.push(currentRow[2].innerHTML);
-    stats.abv.push(currentRow[3].innerHTML);
-    stats.srm.push(currentRow[4].innerHTML);
-    stats.ibu.push(currentRow[5].innerHTML);
-    stats.bottleDate.push(currentRow[5].innerHTML);
+      // Push the respective values to the tableStats object
+      stats.no.push(currentRow[0].innerHTML);
+      stats.brewName.push(currentRow[1].innerHTML);
+      stats.styles.push(currentRow[2].innerHTML);
+      stats.abv.push(currentRow[3].innerHTML);
+      stats.ibu.push(currentRow[4].innerHTML);
+      stats.srm.push(currentRow[5].innerHTML);
+      stats.bottleDate.push(currentRow[5].innerHTML);
+    }
+
   }
 
 }
@@ -119,6 +123,39 @@ function filterArrays(arr) {
   arr.filter((item, index) => arr.indexOf(item) === index);
 }
 
-function getRefinedStats() {
+function filterStatStyles() {
   stats.styles = stats.styles.filter((item, index) => stats.styles.indexOf(item) === index);
+}
+
+function updateTableStats() {
+  const statsDOM = document.querySelectorAll('.stat');
+
+  // Omit brew styles that are duplicate
+  filterStatStyles();
+
+  // Array that will hold the dynamic stats
+  let newStats = [];
+
+  // [0] — 'Number of batches brewed'.
+  newStats[0] = stats.no.length;
+
+  // [1] — 'Number of different styles'.
+  newStats[1] = stats.styles.length;
+
+  // [2] — 'Highest ABV'.
+  newStats[2] = Math.max(... stats.abv);
+
+  // [3] — 'Highest IBU'.
+  newStats[3] = Math.max(... stats.ibu);
+
+
+
+  for (let i = 0; i < statsDOM.length; i++) {
+    // Select the 'number' element within the stats
+    let targ = statsDOM[i].querySelectorAll('.number')[0];
+
+    // Update them accordingly
+    targ.innerHTML = newStats[i];
+  }
+
 }

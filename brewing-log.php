@@ -9,10 +9,8 @@
     <meta name="keywords" content="Brouwerij Geel, Brouwerij, Geel, Arthur Geel, Beer, Cider, Homebrewing, Homebrew, Alcohol, Brewery, Nano Brewery, Design, Historic">
     <meta name="author" content="Arthur Geel, hello@arthurgeel.com">
 
-    <link rel="shortcut icon" href="/i/brouwerij-geel-small.png" type="image/png" id="favicon">
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <?php include 'links.php' ?>
+
   </head>
   <body>
 
@@ -32,19 +30,19 @@
 
           <div class="grid--cell stats">
             <div class="stat">
-              <p class="number">11</p>
+              <p class="number">0</p>
               <h2>Batches Brewed</h2>
             </div>
             <div class="stat">
-              <p class="number">6</p>
+              <p class="number">0</p>
               <h2>Different Styles</h2>
             </div>
             <div class="stat">
-              <p class="number">8.1%</p>
+              <p class="number percentage">0</p>
               <h2>Highest ABV</h2>
             </div>
             <div class="stat">
-              <p class="number">45</p>
+              <p class="number">0</p>
               <h2>Highest IBU</h2>
             </div>
           </div>

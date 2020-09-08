@@ -8,10 +8,8 @@
     <meta name="description" content="Brouwerij Geel is an independent nano-brewery based in Utrecht, the Netherlands. We have been brewing ciders & beers since 2017, and we occasionally dabble in wine-making too!">
     <meta name="author" content="Arthur Geel, hello@arthurgeel.com">
 
-    <link rel="shortcut icon" href="/i/brouwerij-geel-small.png" type="image/png" id="favicon">
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <?php include 'links.php' ?>
+
   </head>
   <body>
 
