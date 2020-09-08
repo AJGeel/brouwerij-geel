@@ -1125,6 +1125,29 @@ table.brewing-log--more td {
   opacity: .7;
 }
 
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 8rem;
+}
+
+.page h1, .page h2 {
+  font-family: 'Sen', sans-serif;
+  margin: 2rem 0 1rem 0;
+}
+
+.page h1 {
+  font-size: 2rem;
+}
+
+.page h2 {
+  font-size: 1.4rem;
+}
+
+.page p {
+  margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 512px) {
 
   nav ul > li {
