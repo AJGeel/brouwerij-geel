@@ -46,7 +46,7 @@
 
       <div class="container">
 
-        <section class="hero outlined">
+        <section class="hero outlined limit-width">
           <div class="hero--left">
             <p class="category">Wine / Red Wine</p>
             <p class="publish-date">February 28<sup>th</sup>, 2020</p>
@@ -59,7 +59,7 @@
           </div>
         </section>
 
-        <article class="recipe" id="recipe">
+        <article class="recipe limit-width" id="recipe">
           <section class="ingredients outlined">
             <h2>Ingredients*</h2>
             <p class="batch-size">* This recipe results in a batch of &nbsp;( <span class="newAmount active" id="amount_3.8">3.8</span> / <span class="newAmount" id="amount_10">10</span> / <span class="newAmount" id="amount_20">20</span> )&nbsp; liters.</p>
@@ -163,7 +163,7 @@
 
         </article>
 
-        <div id="disqus_thread">
+        <div id="disqus_thread" class="limit-width">
           <p class="notice">Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></p>
         </div>
       </div>

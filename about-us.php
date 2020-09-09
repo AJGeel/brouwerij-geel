@@ -45,7 +45,7 @@
 
     <main id="swup" class="swup-transition-main">
 
-      <div class="masonry-with-columns">
+      <div class="masonry-with-columns limit-width">
         <!-- <div><img src="/i/brewing-hero.jpg" alt="our hero"></div> -->
         <div class="has-fill"><h2>Please note: this page is under construction.</h2></div>
         <div><img src="/i/about-us/cider-in-bottle.jpg" alt="cider in bottle" loading="lazy"></div>

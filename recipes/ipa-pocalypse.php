@@ -19,11 +19,11 @@
 
       <div class="container">
 
-        <section class="hero outlined">
+        <section class="hero outlined limit-width">
           <div class="hero--left">
             <p class="category">Beer / Craft Beer</p>
             <p class="publish-date">March 18<sup>th</sup>, 2020</p>
-            <h1 class="brew-name">IPA&mdash;Pocalypse</h1>
+            <h1 class="brew-name">IPA&mdash;Poca&shy;lypse</h1>
             <p class="brew-description">As the end of the world as we know it seams to be nearing fast, what else is one to do other than making beer? Blessed by this vision of sheer lucidity, <i>Brouwerij Geel</i> set out to explore the boundaries of Indian Pale Ales. This <i>Post-Apocalyptic IPA</i> uses shredded beets to achieve a haunting shade of red. Don't tell us we didn't warn you!</p>
             <button class="call-to-action" type="button" name="call-to-action" onclick="location.href='#recipe'"><span>Check out the Recipe &rarr;</span></button>
           </div>
@@ -32,7 +32,7 @@
           </div>
         </section>
 
-        <article class="recipe" id="recipe">
+        <article class="recipe limit-width" id="recipe">
           <section class="ingredients outlined">
             <h2>Ingredients*</h2>
             <p class="batch-size">* This recipe results in a batch of &nbsp;( <span class="newAmount active" id="amount_3.8">3.8</span> / <span class="newAmount" id="amount_10">10</span> / <span class="newAmount" id="amount_20">20</span> )&nbsp; liters.</p>
@@ -181,7 +181,7 @@
         </article>
       </div>
 
-      <div id="disqus_thread">
+      <div id="disqus_thread" class="limit-width">
         <p class="notice">Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></p>
       </div>
 

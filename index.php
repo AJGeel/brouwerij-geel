@@ -59,7 +59,7 @@
 
       </div>
 
-      <div class="container behind-the-scenes">
+      <div class="container behind-the-scenes limit-width">
         <div class="scene">
           <img src="https://source.unsplash.com/500x600/?brewery" alt="Placeholder image">
         </div>

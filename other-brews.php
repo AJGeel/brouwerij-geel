@@ -1,5 +1,5 @@
 <div class="container middle">
-  <section class="other-brews">
+  <section class="other-brews limit-width">
     <h2>Have a look at some other stuff we brewed&hellip; <span onclick="updateBrewSelection()">🍎🍺</span></h2>
 
     <div class="carrousel">

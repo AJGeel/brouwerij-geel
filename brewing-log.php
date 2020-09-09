@@ -18,7 +18,7 @@
 
     <main id="swup" class="swup-transition-main">
 
-      <div class="container brewing-log">
+      <div class="container brewing-log limit-width">
 
         <div class="grid">
           <div class="grid--cell">
@@ -188,7 +188,7 @@
           </table>
         </div>
 
-        <div id="disqus_thread">
+        <div id="disqus_thread" class="limit-width">
           <p class="notice">Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></p>
         </div>
 

@@ -61,6 +61,12 @@ table {
   margin-top: 2em;
 }
 
+.limit-width {
+  max-width: calc(1280px - -2 * 4em);
+  padding: 0 4em;
+  margin: 0 auto;
+}
+
 /* Easter egg: show approximation of beer colour (SRM) upon hover */
 
 table #srmRow {
@@ -195,11 +201,6 @@ body {
   -moz-column-width: 200px;
   column-width: 200px;
   padding-bottom: 2em;
-
-  /* max-width: calc(1280px + 2 * 4em); */
-  max-width: calc(1280px - -2 * 4em);
-  margin: 0 auto;
-  padding: 8em;
 }
 
 .container.behind-the-scenes .scene {
@@ -284,19 +285,9 @@ a:hover {
 
 nav {
   position: fixed;
-
-  /* Full-width navbar */
   width: 100%;
-  /* padding: 0 4em; */
-
-  /* Non-full-width navbar */
-  /* width: calc(100vw - 8em);
-  padding: 0 4em 0 0;
-  margin-left: 4em; */
-
   height: 4em;
   z-index: 10;
-  /* border-bottom-right-radius: 4px; */
   background-color: var(--royal-gold-sand);
   box-shadow:   0 1px 1px hsla(38, 20%, 60%, .08),
   0 2px 2px hsla(38, 20%, 60%, .12),
@@ -319,7 +310,6 @@ nav .navbar {
   /* justify-content: flex-start; */
   align-items: center;
 
-  /* max-width: calc(1280px + 2 * 4em); */
   max-width: calc(1280px - -2 * 4em);
   padding: 0 4em;
   margin: 0 auto;
@@ -405,9 +395,6 @@ footer {
   padding: 4em;
   display: flex;
   justify-content: space-between;
-  /* max-width: calc(1280px + 2 * 4em); */
-  max-width: calc(1280px - -2 * 4em);
-  margin: 0 auto;
 }
 
 .footer-inner .column {
@@ -523,8 +510,6 @@ footer {
 }
 
 #disqus_thread {
-  max-width: calc(1280px - -2 * 4em);
-  padding: 4em;
   margin: 10em auto;
 }
 
@@ -591,10 +576,6 @@ ul > li.completed:before {
   column-gap: 1rem;
   padding: 4em;
   padding-top: 8em;
-
-  /* max-width: calc(1280px + 2 * 4em); */
-  max-width: calc(1280px - -2 * 4em);
-  margin: 0 auto;
 }
 
 .masonry-with-columns div {
@@ -626,18 +607,11 @@ ul > li.completed:before {
 
 .hero {
   display: flex;
-  /* height: 100vh; */
   align-items: center;
   justify-content: center;
   padding: 4em;
   box-sizing: border-box;
-
-  /* max-width: calc(1280px + 2 * 4em); */
-  max-width: calc(1280px - -2 * 4em);
-  margin: 0 auto;
   margin-top: 4em;
-  /* -webkit-animation: fadeInBottom .8s ease-in-out;
-  animation: fadeInBottom .8s ease-in-out; */
 }
 
 .hero div {
@@ -710,9 +684,6 @@ ul > li.completed:before {
 
 .recipe {
   display: flex;
-  /* max-width: calc(1280px + 2 * 4em); */
-  max-width: calc(1280px - -2 * 4em);
-  margin: 0 auto;
   margin-top: 4em;
 }
 
@@ -882,13 +853,6 @@ hr.beer {
 }
 
 /* Other Brews styling */
-
-.other-brews {
-  /* max-width: calc(1280px + 2 * 4em); */
-  max-width: calc(1280px - -2 * 4em);
-  padding: 4em;
-  margin: 0 auto;
-}
 
 .other-brews h2 {
   text-align: center;
@@ -1061,12 +1025,6 @@ hr.beer {
 .stats .stat:nth-of-type(2n) { border-left: none; }
 .stats .stat:nth-of-type(n+3) { border-top: none; }
 
-.container.brewing-log {
-  max-width: calc(1280px - -2 * 4em);
-  padding: 4em;
-  margin: 0 auto;
-}
-
 .brewing-log .paragraph {
   margin-bottom: 1em;
 }
@@ -1186,6 +1144,16 @@ table.brewing-log--more td {
     font-size: .9em;
   }
 
+  .limit-width {
+    max-width: calc(1280px - -2 * 2em);
+    padding: 0 2em;
+    margin: 0 auto;
+  }
+
+  .footer-inner {
+    padding: 4em;
+  }
+
   .recipe {
     margin-top: 2em;
   }
@@ -1230,6 +1198,10 @@ table.brewing-log--more td {
 
   .hero .brew-name {
     font-size: 3.5em;
+  }
+
+  .footer-inner>a, .footer-inner>.column {
+    margin-right: 0;
   }
 
   nav {
@@ -1451,6 +1423,11 @@ table.brewing-log--more td {
 
   .footer-inner .column {
     margin: 0;
+    margin-bottom: 4em;
+  }
+
+  .footer-inner .column:last-child {
+    margin-bottom: 0;
   }
 
   .footer-inner .column.main {

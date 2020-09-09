@@ -19,11 +19,11 @@
 
       <div class="container">
 
-        <section class="hero outlined">
+        <section class="hero outlined limit-width">
           <div class="hero--left">
             <p class="category">Beer / Craft Beer</p>
             <p class="publish-date">February 25<sup>th</sup>, 2020</p>
-            <h1 class="brew-name">Gembier</h1>
+            <h1 class="brew-name">Gem&shy;bier</h1>
             <p class="brew-description">Sweet. Sour. Spicy. <i>Gembier</i> is a <i>Ginger Ale's</i> more interesting, alcoholic brother. <i>Gembier</i> is a very affordable and accessible brew, and makes for a great introduction to homebrewing. This naturally flavoured- and naturally carbonated brew only calls for five ingredients: <i>Ginger</i>, <i>Sugar</i>, <i>Lemon</i>, <i>Water</i>, and a wee bit of patience.</p>
             <p class="brew-description">A shout-out goes out to <a target="_blank" href="https://www.youtube.com/watch?v=LqPko6a3Wh4">Joshua Weissman</a>, whose 2018 video inspired this recipe.</p>
             <button class="call-to-action" type="button" name="call-to-action" onclick="location.href='#recipe'"><span>Check out the Recipe &rarr;</span></button>
@@ -33,7 +33,7 @@
           </div>
         </section>
 
-        <article class="recipe" id="recipe">
+        <article class="recipe limit-width" id="recipe">
           <section class="ingredients outlined">
             <h2>Ingredients*</h2>
             <p class="batch-size">* This recipe results in a batch of &nbsp;( <span class="newAmount active" id="amount_3.8">3.8</span> / <span class="newAmount" id="amount_10">10</span> / <span class="newAmount" id="amount_20">20</span> )&nbsp; liters.</p>
@@ -164,7 +164,7 @@
         </article>
       </div>
 
-      <div id="disqus_thread">
+      <div id="disqus_thread" class="limit-width">
         <p class="notice">Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></p>
       </div>
 
