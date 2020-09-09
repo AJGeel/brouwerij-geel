@@ -24,7 +24,7 @@
           <div class="hero--left">
             <p class="category">Beer / Craft Beer</p>
             <p class="publish-date">April 25<sup>th</sup>, 2020</p>
-            <h1 class="brew-name">Hefeweizen</h1>
+            <h1 class="brew-name">Hefe&shy;weizen</h1>
             <p class="brew-description">Pickled af helvetica messenger bag readymade tote bag craft beer intelligentsia cronut bitters. Twee crucifix bitters, butcher lyft salvia bicycle rights shaman. Cred lumbersexual fanny pack vaporware etsy. Chartreuse la croix banh mi, fam hell of gluten-free salvia. Sartorial palo santo brunch four loko humblebrag seitan. Williamsburg godard schlitz wolf coloring book shabby.</p>
             <button class="call-to-action" type="button" name="call-to-action" onclick="location.href='#recipe'"><span>Check out the Recipe &rarr;</span></button>
           </div>
@@ -177,9 +177,6 @@
 
         </article>
       </div>
-
-      <!-- Let the other brews component know which one to not include -->
-      <script type="text/javascript"> let currentBrew = 6 </script>
 
       <?php include('../other-brews.php'); ?>
       <?php include('../footer.php'); ?>

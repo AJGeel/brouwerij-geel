@@ -73,8 +73,6 @@
               <li>25 g of Grated Ginger</li>
             </ul>
 
-            <!-- <button class="call-to-action" onclick="toggleNavBar();"><span>Show Nav</span></button> -->
-
           </section>
 
           <section class="instructions">
@@ -109,7 +107,6 @@
               </ul>
 
               <div class="intermezzo">
-                <!-- <img src="https://placehold.it/40x40" alt=""> -->
                 <svg id="clock-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><title>Artboard 1</title><rect x="33.3" y="73.6" width="8.86" height="2.21" transform="translate(-45.87 70.66) rotate(-60.43)"/><rect x="23.4" y="63.82" width="8.85" height="2.21" transform="translate(-28.98 22.94) rotate(-30.34)"/><rect x="36.31" y="23.86" width="2.21" height="8.85" transform="translate(-9.17 22.79) rotate(-30.37)"/><rect x="49.85" y="73.78" width="2.21" height="8.86" transform="translate(-0.52 0.34) rotate(-0.38)"/><rect x="26.55" y="33.75" width="2.21" height="8.85" transform="translate(-19.2 43.39) rotate(-60.43)"/><rect x="19.58" y="50.24" width="8.86" height="2.21" transform="translate(-0.21 0.1) rotate(-0.23)"/><rect x="62.64" y="70.29" width="2.21" height="8.86" transform="translate(-28.57 41.2) rotate(-29.58)"/><path d="M80.81,21.34A42.53,42.53,0,1,0,20.67,81.48,42.53,42.53,0,0,0,80.81,21.34Zm1,28.92v2.21l-8.86,0V50.22ZM77.13,35,78.22,37l-7.7,4.37-1.09-1.92ZM65.35,23.91,67.25,25l-4.47,7.64-1.91-1.12ZM76.71,77.38a36.73,36.73,0,1,1-26-62.7H51V51.41L82.42,70A37,37,0,0,1,76.71,77.38Z"/></svg>
                 <p><span>Intermezzo:</span> Keep in a dark place at room temperature for <i>one week</i>, until the fermentable sugars have been converted into alcohol. That's the brew day done for now! Time to relax and have a pint 🍻.</p>
               </div>
@@ -166,9 +163,6 @@
 
         </article>
       </div>
-
-      <!-- Let the other brews component know which one to not include -->
-      <script type="text/javascript"> let currentBrew = 3</script>
 
       <?php include('../other-brews.php'); ?>
       <?php include('../footer.php'); ?>

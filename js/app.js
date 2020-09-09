@@ -16,6 +16,8 @@ function init() {
 
   if (document.querySelectorAll('.other-brews')[0] !== undefined) {
     // console.log('Run Other Brews JS functions.');
+    // Check for 'Other Brews'
+
     updateBrewSelection();
   }
 

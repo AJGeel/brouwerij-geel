@@ -164,9 +164,6 @@
         </article>
       </div>
 
-      <!-- Let the other brews component know which one to not include -->
-      <script type="text/javascript"> let currentBrew = 1</script>
-
       <?php include('../other-brews.php'); ?>
       <?php include('../footer.php'); ?>
 

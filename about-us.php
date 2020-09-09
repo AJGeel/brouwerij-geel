@@ -48,19 +48,19 @@
       <div class="masonry-with-columns">
         <!-- <div><img src="/i/brewing-hero.jpg" alt="our hero"></div> -->
         <div class="has-fill"><h2>Please note: this page is under construction.</h2></div>
-        <div><img src="/i/about-us/cider-in-bottle.jpg" alt="cider in bottle"></div>
-        <div><img src="/i/about-us/cider-in-champagne-bottle.jpg" alt="cider in champagne bottle"></div>
-        <div><img src="/i/about-us/cider-in-glass.jpg" alt="cider in glass bottle"></div>
-        <div><img src="/i/about-us/gembier-in-bottle.jpg" alt="gembier in bottle"></div>
-        <div><img src="/i/about-us/gembier-in-glass.jpg" alt="gembier in glass"></div>
-        <div><img src="/i/about-us/grand-cru-in-bucket.jpg" alt="grand cru in a fermentation bucket"></div>
+        <div><img src="/i/about-us/cider-in-bottle.jpg" alt="cider in bottle" loading="lazy"></div>
+        <div><img src="/i/about-us/cider-in-champagne-bottle.jpg" alt="cider in champagne bottle" loading="lazy"></div>
+        <div><img src="/i/about-us/cider-in-glass.jpg" alt="cider in glass bottle" loading="lazy"></div>
+        <div><img src="/i/about-us/gembier-in-bottle.jpg" alt="gembier in bottle" loading="lazy"></div>
+        <div><img src="/i/about-us/gembier-in-glass.jpg" alt="gembier in glass" loading="lazy"></div>
+        <div><img src="/i/about-us/grand-cru-in-bucket.jpg" alt="grand cru in a fermentation bucket" loading="lazy"></div>
         <div class="has-fill"><h2>Please note: this page is under construction.</h2></div>
-        <div><img src="/i/about-us/grand-cru-in-glass.jpg" alt="grand cru in glass"></div>
-        <div><img src="/i/about-us/grapes-in-bucket.jpg" alt="wine grapes in a fermentation bucket"></div>
-        <div><img src="/i/about-us/wine-hydrometer.jpg" alt="wine hydrometer, showing its original gravity"></div>
-        <div><img src="/i/about-us/ipa-pocalypse-demijohn.jpg" alt="ipa-pocalypse, while in the demijohn"></div>
-        <div><img src="/i/about-us/ipa-pocalypse-in-glass.jpg" alt="ipa-pocalypse, poured in a glass"></div>
-        <div><img src="/i/brewing-hero.jpg" alt="our hero"></div>
+        <div><img src="/i/about-us/grand-cru-in-glass.jpg" alt="grand cru in glass" loading="lazy"></div>
+        <div><img src="/i/about-us/grapes-in-bucket.jpg" alt="wine grapes in a fermentation bucket" loading="lazy"></div>
+        <div><img src="/i/about-us/wine-hydrometer.jpg" alt="wine hydrometer, showing its original gravity" loading="lazy"></div>
+        <div><img src="/i/about-us/ipa-pocalypse-demijohn.jpg" alt="ipa-pocalypse, while in the demijohn" loading="lazy"></div>
+        <div><img src="/i/about-us/ipa-pocalypse-in-glass.jpg" alt="ipa-pocalypse, poured in a glass" loading="lazy"></div>
+        <div><img src="/i/brewing-hero.jpg" alt="our hero" loading="lazy"></div>
         <div class="has-fill"><h2>Please note: this page is under construction.</h2></div>
       </div>
 

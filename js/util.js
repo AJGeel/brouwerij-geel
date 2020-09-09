@@ -64,17 +64,10 @@ const allOtherBrews = [
 // To contain a copy of the brews, will be edited.
 let otherBrews = [];
 
-/* Function that checks if current page has brew associated with it. If so, it removes it from the suggestions. */
-function removeCurrentBrew() {
 
-  try {
-    if (currentBrew != null) {
-      // If there is an active current brew, we remove it from the array
-      otherBrews.splice(currentBrew, 1);
-    }
-  } catch(error) {
-    /* currentBrew may not be defined, which is why this try---catch block is in place. */
-  }
+function removeCurrentBrew(target) {
+  // If there is an active current brew, we remove it from the array
+  otherBrews.splice(target, 1);
 }
 
 
@@ -93,13 +86,46 @@ function getRandom(arr, n) {
     return result;
 }
 
+function checkActiveSelection() {
+  if (document.querySelectorAll('.brew-name')[0] !== undefined) {
+    // Get the text of the active brew name
+    const brewName = document.querySelectorAll('.brew-name')[0].innerText;
+
+    // Array that holds all brews in the correct order
+    const allBrewNames = [
+      'IPA—Pocalypse',
+      'Gembier',
+      'Cherry Cider',
+      'Natural Red Wine',
+      'Toffee Apple',
+      'Dry-Hopped Cider',
+      'Hefeweizen'
+    ];
+
+    // Check if the brewName can be found in allBrewNames. If so, returns true
+    // If not: returns false.
+    const match = allBrewNames.indexOf(`${brewName}`);
+
+    if (match > -1) {
+      return match;
+    } else {
+      return false;
+    }
+  }
+
+  return false;
+}
+
 /* Function that grabs a number of brews, and updates the Carrousel */
 function updateBrewSelection() {
   // Make mutable copy of master elements
   otherBrews = allOtherBrews;
 
-  // Remove current brew (if applicable)
-  removeCurrentBrew();
+  let match = checkActiveSelection();
+  if (match > -1) {
+    // If so: remove this brew from the `otherBrews` component
+    removeCurrentBrew(match);
+  }
 
   // We take three random brews out of the full list
   let brewSelection = getRandom(otherBrews, 3);
