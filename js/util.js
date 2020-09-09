@@ -119,9 +119,11 @@ function checkActiveSelection() {
 /* Function that grabs a number of brews, and updates the Carrousel */
 function updateBrewSelection() {
   // Make mutable copy of master elements
-  otherBrews = allOtherBrews;
+  otherBrews = allOtherBrews.slice();
 
+  // Check if there is an active brew label
   let match = checkActiveSelection();
+
   if (match > -1) {
     // If so: remove this brew from the `otherBrews` component
     removeCurrentBrew(match);
@@ -522,4 +524,12 @@ function scrollToTop() {
 
   // Reintroduce the smooth scroll behavior
   htmlDOM.style.scrollBehavior = 'smooth';
+}
+
+function createDisqusThread() {
+  let d = document;
+  let s = d.createElement('script');
+  s.src = 'https://brouwerijgeel-nl.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', + new Date());
+  (d.head || d.body).appendChild(s);
 }

@@ -63,6 +63,16 @@
               </tr>
             </thead>
             <tbody>
+              <!-- <tr>
+                <td>012</td>
+                <td>Trust Me, I'm An Engineer</td>
+                <td>India Pale Ale</td>
+                <td>5.0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>Hazy</td>
+                <td>Soon 👀</td>
+              </tr> -->
               <tr>
                 <td>011</td>
                 <td><a href="/recipes/hefeweizen.php">Hefeweizen</a></td>
@@ -176,6 +186,10 @@
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <div id="disqus_thread">
+          <p class="notice">Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></p>
         </div>
 
         <!-- <table class="brewing-log--more" onclick="alert('Woah woah woah &mdash; hold it for one second. 🤖 \n\nWe\'ve not integrated a database connection yet. This button is merely a placeholder for now.')">

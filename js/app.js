@@ -40,6 +40,31 @@ function init() {
     calcReadingTime();
     updatePageTitle();
   }
+
+  if (document.getElementById('disqus_thread') !== null) {
+    // console.log('Run Disqus JS functions.');
+
+    if (typeof DISQUS !== 'undefined') {
+      DISQUS.reset({
+        reload: true,
+        config: function () {
+          this.page.url = `https://brouwerijgeel.nl${window.location.pathname}`;
+          this.page.identifier = window.location.pathname;
+        }
+      });
+
+      const noticeMessage = document.querySelectorAll('.notice')[0];
+      noticeMessage.style.display = 'none';
+    } else {
+      // Initialise disqus; setup config and create thread
+      let disqus_config = function () {
+        this.page.url = `https://brouwerijgeel.nl${window.location.pathname}`;
+        this.page.identifier = window.location.pathname;
+      };
+
+      createDisqusThread();
+    }
+  }
 }
 
 // Run 'init' function whenever swup has replaced the content

@@ -162,6 +162,10 @@
           </section>
 
         </article>
+
+        <div id="disqus_thread">
+          <p class="notice">Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></p>
+        </div>
       </div>
 
       <?php include('../other-brews.php'); ?>

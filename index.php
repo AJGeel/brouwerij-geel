@@ -53,7 +53,7 @@
           <h2>Why, hello there!</h2>
           <p>We are an independent nano-brewery based in Utrecht, the Netherlands. At Brouwerij Geel, we're interested in brewing <i>The Good Stuff&trade;</i> ranging from <i>craft beers</i> to <i>ciders &amp; wine</i>.</p>
           <p>At this point in time, we have no plans to sell the things we brew. This may change in the future, who knows&hellip;</p>
-
+          <!-- <a class="link" href="#" target="_blank">Check out our latest brew</a> -->
           <!-- <p>We are fans of open source brewing. For that reason, we use this site to release <a class="dark-link" href="#!">our recipes</a> for you all to see.</p> -->
         </div>
 

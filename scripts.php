@@ -9,6 +9,7 @@
 <script src="/js/modules/other-brews.js" charset="utf-8"></script>
 <script src="/js/modules/recipe.js" charset="utf-8"></script>
 <script src="/js/modules/others.js" charset="utf-8"></script> -->
+<!-- <script src="/js/modules/disqus.js" charset="utf-8"></script> -->
 <!-- Minified: use in production -->
 <script src="/js/util.min.js" charset="utf-8"></script>
 
