@@ -23,7 +23,7 @@
           <div class="hero--left">
             <p class="category">Beer / Craft Beer</p>
             <p class="publish-date">March 18<sup>th</sup>, 2020</p>
-            <h1 class="brew-name">IPA&mdash;Poca&shy;lypse</h1>
+            <h1 class="brew-name">IPA&mdash;Pocalypse</h1>
             <p class="brew-description">As the end of the world as we know it seams to be nearing fast, what else is one to do other than making beer? Blessed by this vision of sheer lucidity, <i>Brouwerij Geel</i> set out to explore the boundaries of Indian Pale Ales. This <i>Post-Apocalyptic IPA</i> uses shredded beets to achieve a haunting shade of red. Don't tell us we didn't warn you!</p>
             <button class="call-to-action" type="button" name="call-to-action" onclick="location.href='#recipe'"><span>Check out the Recipe &rarr;</span></button>
           </div>

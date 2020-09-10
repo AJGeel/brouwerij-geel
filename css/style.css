@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sen:wght@400;700;800&display=swap');
 
+@import url('/css/modules/splide.min.css');
+
 
 /* Global styles: vars, native element overrides, and so on */
 
@@ -67,6 +69,16 @@ table {
   margin: 0 auto;
 }
 
+.no-padding {
+  padding: 0;
+}
+
+.white-bg {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
 /* Easter egg: show approximation of beer colour (SRM) upon hover */
 
 table #srmRow {
@@ -131,7 +143,6 @@ body {
 
 .container {
   padding: 4em;
-  padding-bottom: 8em;
   /* -webkit-animation: fadeInBottom .8s ease-in-out;
   animation: fadeInBottom .8s ease-in-out; */
 }
@@ -200,7 +211,6 @@ body {
   column-gap: 2em;
   -moz-column-width: 200px;
   column-width: 200px;
-  padding-bottom: 2em;
 }
 
 .container.behind-the-scenes .scene {
@@ -509,6 +519,14 @@ footer {
   margin-right: 0;
 }
 
+.limit-width > #disqus_thread {
+  padding: 0;
+}
+
+.limit-width.recipe {
+  padding: 0;
+}
+
 #disqus_thread {
   margin: 10em auto;
 }
@@ -554,6 +572,14 @@ ul > li:before {
   transform: translateY(2px);
   color: var(--royal-gold);
   transition: color .2s ease-in-out;
+}
+
+.splide li:before {
+  content: none;
+}
+
+.splide li:hover {
+  background-color: initial;
 }
 
 ul > li:hover {

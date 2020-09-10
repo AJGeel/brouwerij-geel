@@ -7,6 +7,8 @@ const swup = new Swup();
 
 init();
 
+
+
 function init() {
 
   // Scroll to top
@@ -64,6 +66,17 @@ function init() {
 
       createDisqusThread();
     }
+  }
+
+  if (document.querySelectorAll('.splide')[0] !== undefined) {
+    // new Splide('.splide').mount();
+    new Splide('.splide', {
+      type: 'loop',
+      // perPage: 3,
+      // focus: 'center',
+      // fixedWidth: '60%',
+      gap: '2rem',
+    }).mount();
   }
 }
 

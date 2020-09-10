@@ -11,6 +11,8 @@
 
     <?php include '../links.php' ?>
 
+    <?php include 'log_views.php' ?>
+
 
     <!--
 
@@ -61,7 +63,7 @@
               <span class="meta-date">March 22<sup>nd</sup>, 2020</span>
               <span class="meta-author">By Brülosophy</span>
               <span class="meta-reading-time"><span id="readingTime">Unknown</span> minute read</span>
-              <span class="meta-views">0 Views</span>
+              <span class="meta-views"><?php echo "$counterVal"; ?> View(s)</span>
             </p>
           </div>
 
@@ -103,6 +105,10 @@
             <p>I don’t know. I wish I knew, but I’ve yet to find anyone with the know-how to do an official count. As I mentioned before, I’ve been assuming 100 billion cells, though I fully accept this number is likely way off. Still, it has worked great for me.</p>
           </div>
           <p>If you have any more questions or comments regarding yeast harvesting, please do not hesitate to ask. Cheers!</p>
+
+          <div id="disqus_thread" class="limit-width white-bg">
+            <p class="notice">Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></p>
+          </div>
 
           <div class="blog-controls mobile">
             <a class="prev" href="#!">Previous Article</a>
