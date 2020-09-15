@@ -69,6 +69,7 @@ function init() {
   }
 
   if (document.querySelectorAll('.splide')[0] !== undefined) {
+    // Splide alternative: Flickity https://flickity.metafizzy.co/#new-flickity-v2-2
     // new Splide('.splide').mount();
     new Splide('.splide', {
       type: 'loop',
