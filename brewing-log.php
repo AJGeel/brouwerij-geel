@@ -55,11 +55,13 @@
                 <th onclick="sortTable(0)">No.</th>
                 <th onclick="sortTable(1)">Brew Name</th>
                 <th onclick="sortTable(2)">Style</th>
-                <th onclick="sortTable(3)">ABV</th>
-                <th onclick="sortTable(4)">IBU</th>
-                <th onclick="sortTable(5)">SRM</th>
-                <th onclick="sortTable(6)">Clarity</th>
-                <th onclick="sortTable(7)">Bottle Date</th>
+                <th onclick="sortTable(3)">OG</th>
+                <th onclick="sortTable(4)">FG</th>
+                <th onclick="sortTable(5)">ABV</th>
+                <th onclick="sortTable(6)">IBU</th>
+                <th onclick="sortTable(7)">SRM</th>
+                <th onclick="sortTable(8)">Clarity</th>
+                <th onclick="sortTable(9)">Bottle Date</th>
               </tr>
             </thead>
             <tbody>
@@ -67,6 +69,8 @@
                 <td>013</td>
                 <td>Sweet &amp; Sour Lemon IPA</td>
                 <td>India Pale Ale</td>
+                <td>1.000</td>
+                <td>1.000</td>
                 <td>0</td>
                 <td>51</td>
                 <td>0</td>
@@ -77,6 +81,8 @@
                 <td>012</td>
                 <td>Cidre Doux</td>
                 <td>Cider</td>
+                <td>1.000</td>
+                <td>1.000</td>
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
@@ -87,17 +93,20 @@
                 <td>011</td>
                 <td><a href="/recipes/hefeweizen.php">Hefeweizen</a></td>
                 <td>Weißbier</td>
+                <td>1.000</td>
+                <td>1.000</td>
                 <td>6.0</td>
                 <td>15</td>
                 <td>4</td>
                 <td>Hazy</td>
-                <!-- <td>Soon 👀</td> -->
                 <td>2020-04-25</td>
               </tr>
               <tr>
                 <td>010</td>
                 <td><a href="/recipes/ipa-pocalypse.php">IPA&mdash;Pocalypse</a></td>
                 <td>India Pale Ale</td>
+                <td>1.000</td>
+                <td>1.000</td>
                 <td>7.8</td>
                 <td>45</td>
                 <td>9</td>
@@ -108,6 +117,8 @@
                 <td>009</td>
                 <td><a href="/recipes/chateau-jaune.php">Natural Red Wine</a></td>
                 <td>Wine</td>
+                <td>1.000</td>
+                <td>1.000</td>
                 <td>7.9</td>
                 <td>0</td>
                 <td>0</td>
@@ -118,6 +129,8 @@
                 <td>008</td>
                 <td><a href="/recipes/gembier.php">Gembier (V2)</a></td>
                 <td>Ginger Beer</td>
+                <td>1.000</td>
+                <td>1.000</td>
                 <td>6.2</td>
                 <td>0</td>
                 <td>0</td>
@@ -128,6 +141,8 @@
                 <td>007</td>
                 <td><a href="/recipes/kiki-cheeky-kriekie.php">Kiki's Cheeky Kriekie</a></td>
                 <td>Cider</td>
+                <td>1.000</td>
+                <td>1.000</td>
                 <td>5.6</td>
                 <td>0</td>
                 <td>0</td>
@@ -138,6 +153,8 @@
                 <td>006</td>
                 <td><a href="/recipes/dry-hopped-cider.php">Dry-Hopped Cider</a></td>
                 <td>Cider</td>
+                <td>1.000</td>
+                <td>1.000</td>
                 <td>5.3</td>
                 <td>0</td>
                 <td>2</td>
@@ -148,6 +165,8 @@
                 <td>005</td>
                 <td><a href="/recipes/gembier.php">Gembier (V1)</a></td>
                 <td>Ginger Beer</td>
+                <td>1.000</td>
+                <td>1.000</td>
                 <td>2.8</td>
                 <td>0</td>
                 <td>0</td>
@@ -158,6 +177,8 @@
                 <td>004</td>
                 <td>Grand Cru</td>
                 <td>Amber Ale</td>
+                <td>1.000</td>
+                <td>1.000</td>
                 <td>8.1</td>
                 <td>27</td>
                 <td>30</td>
@@ -168,6 +189,8 @@
                 <td>003</td>
                 <td>Proto Gembier</td>
                 <td>Ginger Beer</td>
+                <td>1.000</td>
+                <td>1.000</td>
                 <td>2.2</td>
                 <td>0</td>
                 <td>0</td>
@@ -178,6 +201,8 @@
                 <td>002</td>
                 <td>Brut Cider</td>
                 <td>Cider</td>
+                <td>1.000</td>
+                <td>1.000</td>
                 <td>7.5</td>
                 <td>0</td>
                 <td>2</td>
@@ -188,6 +213,8 @@
                 <td>001</td>
                 <td><a href="/recipes/toffee-apple.php">Toffee Apple Cider</a></td>
                 <td>Cider</td>
+                <td>1.000</td>
+                <td>1.000</td>
                 <td>4.5</td>
                 <td>0</td>
                 <td>10</td>

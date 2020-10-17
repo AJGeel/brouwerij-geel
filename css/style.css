@@ -1081,6 +1081,7 @@ hr.beer {
 
 table.brewing-log {
   border-collapse: inherit;
+  font-size: .95rem;
 }
 
 .brewing-log tr {
@@ -1114,7 +1115,7 @@ table.brewing-log tr > td:nth-child(2) {
   font-style: italic;
 }
 
-table.brewing-log tr > td:nth-child(4)::after {
+table.brewing-log tr > td:nth-child(6)::after {
   content: "%";
   /* Add a '%' sign after brewing percentages, makes the list easier
   to maintain and sort */
@@ -1581,6 +1582,20 @@ table.brewing-log--more td {
   font-style: italic;
 }
 
+.blog-article hr {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  border-style: solid;
+  color: var(--royal-gold-select);
+}
+
+.blog-header .img-caption, .blog-article .img-caption {
+  font-family: 'Sen', sans-serif;
+  margin-top: .5rem;
+  font-size: .9rem;
+  opacity: .8;
+}
+
 
 /* Fancy dropcap */
 .blog-article .dropcap:first-child:first-letter {
@@ -1598,9 +1613,14 @@ table.brewing-log--more td {
 
 .blog-article h2 {
   font-size: 1.5em;
-  margin-top: 1.5em;
+  margin-top: 2.5em;
   margin-bottom: .5em;
   font-weight: bold;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
 }
 
 .blog-article .faq {
