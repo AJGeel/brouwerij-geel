@@ -63,16 +63,26 @@
               </tr>
             </thead>
             <tbody>
-              <!-- <tr>
-                <td>012</td>
-                <td>Trust Me, I'm An Engineer</td>
+              <tr>
+                <td>013</td>
+                <td>Sweet &amp; Sour Lemon IPA</td>
                 <td>India Pale Ale</td>
-                <td>5.0</td>
                 <td>0</td>
+                <td>51</td>
                 <td>0</td>
                 <td>Hazy</td>
                 <td>Soon 👀</td>
-              </tr> -->
+              </tr>
+              <tr>
+                <td>012</td>
+                <td>Cidre Doux</td>
+                <td>Cider</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>Clear</td>
+                <td>Soon 👀</td>
+              </tr>
               <tr>
                 <td>011</td>
                 <td><a href="/recipes/hefeweizen.php">Hefeweizen</a></td>

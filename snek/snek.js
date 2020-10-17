@@ -4,10 +4,11 @@
 const canvas = document.getElementById('game-area');
 let width, height, tileSize, scale, fps;
 let ctx;
-let angel; // Our snake is called Angel di Maria
+let snake;
 let score, isPaused, step;
 let gameOver = false;
 let lWidth;
+let inputPending;
 
 let fontSize, fontFamily;
 
@@ -22,7 +23,7 @@ function init() {
   // Key game setup
   scale = 2;
   tileSize = scale * 20;
-  fps = 10;
+  fps = 13;
   score = 0;
   isPaused = false;
   lWidth = 1;
@@ -34,9 +35,10 @@ function init() {
 
   // Colours
   gold = 'hsla(38 40% 60% / 1)';
-  goldPartial = 'hsla(38 40% 60%';
+  // gold = 'hsl(302deg 91% 79%)'; /* Nienke Roze */
   darkGold = '#423724';
-  lightGold = '#ffeccc';
+  lightGold = 'hsl(38deg 100% 90%)';
+  // lightGold = 'hsl(302deg 100% 90%)'; /* Nienke Roze */
 
   // SFX
   chomps_1 = new sound('s_chomps_1.mp3', 1);
@@ -46,9 +48,9 @@ function init() {
   burp = new sound('s_burp.mp3', .7);
   boom = new sound('s_boom.mp3', .7);
 
-  // hiHat = new sound('s_hiHat.mp3', .1);
-  // kick = new sound('s_kick.mp3', .7);
-  // snare = new sound('s_snare.mp3', .7);
+  hiHat = new sound('s_hiHat.mp3', .1);
+  kick = new sound('s_kick.mp3', .7);
+  snare = new sound('s_snare.mp3', .7);
 
 
   // Full-screen canvas:
@@ -59,7 +61,6 @@ function init() {
   const adm = document.querySelectorAll('.angel-di-maria')[0];
   const padding = 64;
   if (!gameOver) {
-    console.log(gameOver);
     width = scale * ( tileSize * Math.floor((adm.offsetWidth - 2*padding) / tileSize) );
     height = scale * ( tileSize * Math.floor(adm.offsetHeight / tileSize) );
 
@@ -68,13 +69,13 @@ function init() {
   }
   ctx = canvas.getContext('2d');
 
-  food = new Food(spawnLocation(), `${lightGold}`);
-
   snake = new Snake({
     x: tileSize * Math.floor(width / (2 * tileSize)),
     y: tileSize * Math.floor(height / (2 * tileSize)) },
     `${gold}`
   );
+
+  food = new Food(spawnLocation(), `${lightGold}`);
 
   // Finally, reset the gameOver variable
   gameOver = false;
@@ -117,6 +118,8 @@ function update() {
   if (canvas.classList.contains('paused')) {
     canvas.classList.remove('paused');
   }
+
+  inputPending = false;
 
   if (snake.die()) {
     gameOver = true;
@@ -224,6 +227,18 @@ function showPaused() {
 // Determining a random spawn location on the grid
 function spawnLocation() {
   // Breaking the entire canvas into a grid of tiles
+  // let rows = width / tileSize;
+  // let cols = height / tileSize;
+  //
+  // let xPos, yPos;
+  //
+  // generateXY(rows, cols);
+  //
+  // return {
+  //   x: xPos,
+  //   y: yPos
+  // };
+
   let rows = width / tileSize;
   let cols = height / tileSize;
 
@@ -233,6 +248,29 @@ function spawnLocation() {
   yPos = Math.floor(Math.random() * cols) * tileSize;
 
   return {x: xPos, y: yPos };
+}
+
+function generateXY(rows, cols) {
+  xPos = Math.floor(Math.random() * rows) * tileSize;
+  yPos = Math.floor(Math.random() * cols) * tileSize;
+
+  // Check for potential collision. If so: run function again.
+  if (checkCollision(xPos, yPos)) {
+    generateXY(rows, cols);
+  }
+
+  return { xPos, yPos }
+}
+
+function checkCollision(x, y) {
+  for (let i = 0; i < snake.tail.length; i++) {
+    if (Math.abs(x - snake.tail[i].x) < tileSize && Math.abs(y - snake.tail[i].y) < tileSize) {
+      console.log("COLLISION");
+      return true;
+    }
+
+    return false;
+  }
 }
 
 
@@ -313,6 +351,7 @@ class Snake {
       ctx.beginPath();
       ctx.arc(this.tail[i].x + tileSize / 2, this.tail[i].y + tileSize / 2, tileSize / 2, 0, 2*Math.PI);
       ctx.fillStyle = 'hsl(38 40% ' + (60 - 2*i) + '%)';
+      // ctx.fillStyle = 'hsl(302 91% ' + (79 - 2*i) + '%)'; /* Nienke roze */
       ctx.fill();
       ctx.strokeStyle = `${darkGold}`;
       ctx.lineWidth = lWidth;
@@ -329,7 +368,10 @@ class Snake {
 
     // Updating the start of the tail to acquire the position of the head
     if (this.tail.length != 0) {
-      this.tail[0] = { x: this.x, y: this.y };
+      this.tail[0] = {
+        x: this.x,
+        y: this.y
+      };
     }
 
     // Head movement
@@ -343,7 +385,7 @@ class Snake {
     this.velY = dirY;
   }
 
-  // Determining whether Angel has eaten a piece of food.
+  // Determining whether Angel Di Maria has eaten a piece of food.
   eat() {
     if (Math.abs(this.x - food.x) < tileSize && Math.abs(this.y - food.y) < tileSize) {
       // Add it to the tail
@@ -354,7 +396,7 @@ class Snake {
     return false;
   }
 
-  // Checking if Angel has transferred to PSG.
+  // Checking if Angel Di Maria should be transferred to PSG.
   die() {
     for (let i = 0; i < this.tail.length; i++) {
       if (Math.abs(this.x - this.tail[i].x) < tileSize && Math.abs(this.y - this.tail[i].y) < tileSize) {
@@ -386,25 +428,37 @@ window.addEventListener("keydown", function (e) {
         update();
       }
     }
-  } else if (e.key === "ArrowUp") {
-    e.preventDefault();
-    if (snake.velY != 1 && snake.x >= 0 && snake.x <= width && snake.y >= 0 && snake.y <= height) {
-      snake.dir(0, -1);
+  } else if (e.key === "ArrowUp" || e.key === "w" || e.key === "W") {
+    if (!inputPending) {
+      e.preventDefault();
+      if (snake.velY != 1 && snake.x >= 0 && snake.x <= width && snake.y >= 0 && snake.y <= height) {
+        snake.dir(0, -1);
+        inputPending = true;
+      }
     }
-  } else if (e.key === "ArrowDown") {
-    e.preventDefault();
-    if (snake.velY != -1 && snake.x >= 0 && snake.x <= width && snake.y >= 0 && snake.y <= height) {
-      snake.dir(0, 1);
+  } else if (e.key === "ArrowDown" || e.key === "s" || e.key === "S") {
+    if (!inputPending) {
+      e.preventDefault();
+      if (snake.velY != -1 && snake.x >= 0 && snake.x <= width && snake.y >= 0 && snake.y <= height) {
+        snake.dir(0, 1);
+        inputPending = true;
+      }
     }
-  } else if (e.key === "ArrowLeft") {
-    e.preventDefault();
-    if (snake.velX != 1 && snake.x >= 0 && snake.x <= width && snake.y >= 0 && snake.y <= height) {
-      snake.dir(-1, 0);
+  } else if (e.key === "ArrowLeft" || e.key === "a" || e.key === "A") {
+    if (!inputPending) {
+      e.preventDefault();
+      if (snake.velX != 1 && snake.x >= 0 && snake.x <= width && snake.y >= 0 && snake.y <= height) {
+        snake.dir(-1, 0);
+        inputPending = true;
+      }
     }
-  } else if (e.key === "ArrowRight") {
-    e.preventDefault();
-    if (snake.velX != -1 && snake.x >= 0 && snake.x <= width && snake.y >= 0 && snake.y <= height) {
-      snake.dir(1, 0);
+  } else if (e.key === "ArrowRight" || e.key === "d" || e.key === "D") {
+    if (!inputPending) {
+      e.preventDefault();
+      if (snake.velX != -1 && snake.x >= 0 && snake.x <= width && snake.y >= 0 && snake.y <= height) {
+        snake.dir(1, 0);
+        inputPending = true;
+      }
     }
   }
 });

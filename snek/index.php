@@ -29,7 +29,8 @@
     </main>
 
     <?php include('../scripts.php'); ?>
-    <script src="snek.min.js" charset="utf-8"></script>
+    <!-- <script src="snek.min.js" charset="utf-8"></script> -->
+    <script src="snek.js" charset="utf-8"></script>
 
   </body>
 </html>

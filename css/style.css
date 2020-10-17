@@ -161,6 +161,10 @@ body {
   align-items: stretch;
   padding: 0;
   padding-top: 4em;
+
+  /* Ensure the hero does not look ridiculous on wide (>1920px) displays */
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .splash-image, .splash-text {
@@ -1759,4 +1763,18 @@ html.is-animating.swup-theme-reverse.is-leaving .swup-transition-main {
 @keyframes roundAndRound {
   from { transform: rotate(0deg);   }
   to   { transform: rotate(359deg); }
+}
+
+/* Accessibility: for those that suffer from vertigo or vestibular disorder
+   See https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/
+*/
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    /* Very short durations means JavaScript that relies on events still works */
+    -webkit-animation-duration: 0.001ms !important;
+            animation-duration: 0.001ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }
