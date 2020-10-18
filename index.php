@@ -75,15 +75,28 @@
 
       </div> -->
 
+      <style>
+
+      .scene {
+        height: 0;
+        width: 100%;
+        padding-top: 120%; /* 500x600 image expected: 6/5 = 120% */
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      </style>
+
       <div class="container behind-the-scenes limit-width">
-        <div class="scene">
-          <img src="https://source.unsplash.com/500x600/?brewery" alt="Placeholder image">
+        <div class="scene" style="background-image: url('https://source.unsplash.com/500x600/?brewery')">
+          <!-- <img src="https://source.unsplash.com/500x600/?brewery" alt="Placeholder image" style="min-height: 486px"> -->
         </div>
-        <div class="scene">
-          <img src="https://source.unsplash.com/500x600/?beer" alt="Placeholder image">
+        <div class="scene" style="background-image: url('https://source.unsplash.com/500x600/?beer')">
+          <!-- <img src="https://source.unsplash.com/500x600/?beer" alt="Placeholder image" style="min-height: 486px"> -->
         </div>
-        <div class="scene">
-          <img src="https://source.unsplash.com/500x600/?humulus" alt="Placeholder image">
+        <div class="scene" style="background-image: url('https://source.unsplash.com/500x600/?humulus')">
+          <!-- <img src="https://source.unsplash.com/500x600/?humulus" alt="Placeholder image" style="min-height: 486px"> -->
         </div>
       </div>
 

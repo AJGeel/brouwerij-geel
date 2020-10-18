@@ -248,6 +248,7 @@ let stats = {
   no: [],
   brewName: [],
   styles: [],
+  volume: [],
   og: [],
   fg: [],
   abv: [],
@@ -269,12 +270,13 @@ function getStatsFromTable() {
       stats.no.push(currentRow[0].innerHTML);
       stats.brewName.push(currentRow[1].innerHTML);
       stats.styles.push(currentRow[2].innerHTML);
-      stats.og.push(currentRow[3].innerHTML);
-      stats.fg.push(currentRow[4].innerHTML);
-      stats.abv.push(currentRow[5].innerHTML);
-      stats.ibu.push(currentRow[6].innerHTML);
-      stats.srm.push(currentRow[7].innerHTML);
-      stats.bottleDate.push(currentRow[8].innerHTML);
+      stats.volume.push(currentRow[3].innerHTML);
+      stats.og.push(currentRow[4].innerHTML);
+      stats.fg.push(currentRow[5].innerHTML);
+      stats.abv.push(currentRow[6].innerHTML);
+      stats.ibu.push(currentRow[7].innerHTML);
+      stats.srm.push(currentRow[8].innerHTML);
+      stats.bottleDate.push(currentRow[9].innerHTML);
     }
 
   }

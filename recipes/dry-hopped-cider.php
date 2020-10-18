@@ -186,7 +186,28 @@
       }
 
       /* Pesky box-shadow overrides: Use autocompleter for this 'hsla(140' -> 'hsla(NEW)'. */
-      button.call-to-action{box-shadow:0 0 2px hsla(140,80%,60%,0)}button.call-to-action:focus,button.call-to-action:hover{box-shadow:0 0 10px hsla(140,80%,60%,.5),0 0 30px hsla(140,80%,60%,.25)}nav{box-shadow:0 1px 1px hsla(140,20%,60%,.08),0 2px 2px hsla(140,20%,60%,.12),0 4px 4px hsla(140,20%,60%,.16),0 8px 8px hsla(140,20%,60%,.2)}nav .navbar svg{box-shadow:0 1px 1px hsla(140,20%,60%,.08),0 2px 2px hsla(140,20%,60%,.12),0 4px 4px hsla(140,20%,60%,.16),0 8px 8px hsla(140,20%,60%,.2)}nav .navbar svg:hover{box-shadow:0 1px 2px hsla(140,20%,60%,.16),0 2px 4px hsla(140,20%,60%,.24),0 4px 8px hsla(140,20%,60%,.32),0 8px 16px hsla(140,20%,60%,.4)}footer .social:hover{box-shadow:0 0 10px hsla(140,80%,60%,.5),0 0 30px hsla(140,80%,60%,.25)}.brew-label{box-shadow:0 1px 1px hsla(140,20%,60%,.08),0 2px 2px hsla(140,20%,60%,.12),0 4px 4px hsla(140,20%,60%,.16),0 8px 8px hsla(140,20%,60%,.2)}.hero .brew-label:hover{box-shadow:0 2px 2px hsla(140,20%,60%,.06),0 4px 4px hsla(140,20%,60%,.08),0 8px 8px hsla(140,20%,60%,.12),0 16px 16px hsla(140,20%,60%,.16)}.other-brews .carrousel .carrousel--cell:hover .brew-label{box-shadow:0 2px 2px hsla(140,20%,60%,.06),0 4px 4px hsla(140,20%,60%,.08),0 8px 8px hsla(140,20%,60%,.12),0 16px 16px hsla(140,20%,60%,.16)}
+      button.call-to-action{
+    box-shadow:0 0 2px hsla(140,80%,60%,0)
+}
+button.call-to-action:focus,button.call-to-action:hover{
+    box-shadow:0 0 10px hsla(140,80%,60%,.5),0 0 30px hsla(140,80%,60%,.25)
+}
+nav{
+    box-shadow:0 1px 1px hsla(140,20%,60%,.08),0 2px 2px hsla(140,20%,60%,.12),0 4px 4px hsla(140,20%,60%,.16),0 8px 8px hsla(140,20%,60%,.2)
+}
+footer .social:hover{
+    box-shadow:0 0 10px hsla(140,80%,60%,.5),0 0 30px hsla(140,80%,60%,.25)
+}
+.brew-label{
+    box-shadow:0 1px 1px hsla(140,20%,60%,.08),0 2px 2px hsla(140,20%,60%,.12),0 4px 4px hsla(140,20%,60%,.16),0 8px 8px hsla(140,20%,60%,.2)
+}
+.hero .brew-label:hover{
+    box-shadow:0 2px 2px hsla(140,20%,60%,.06),0 4px 4px hsla(140,20%,60%,.08),0 8px 8px hsla(140,20%,60%,.12),0 16px 16px hsla(140,20%,60%,.16)
+}
+.other-brews .carrousel .carrousel--cell:hover .brew-label{
+    box-shadow:0 2px 2px hsla(140,20%,60%,.06),0 4px 4px hsla(140,20%,60%,.08),0 8px 8px hsla(140,20%,60%,.12),0 16px 16px hsla(140,20%,60%,.16)
+}
+
     </style>
 
     </main>
