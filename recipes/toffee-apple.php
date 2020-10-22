@@ -46,7 +46,7 @@
 
       <div class="container">
 
-        <section class="hero outlined limit-width">
+        <section class="recipe hero outlined limit-width">
           <div class="hero--left">
             <p class="category">Cider / Craft Cider</p>
             <p class="publish-date">December 7<sup>th</sup>, 2017</p>

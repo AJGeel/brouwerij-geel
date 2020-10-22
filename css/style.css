@@ -308,7 +308,7 @@ nav {
   height: 4em;
   z-index: 10;
   /* background-color: var(--royal-gold-sand); */
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255,255,255,.75);
           -webkit-backdrop-filter: saturate(150%) blur(20px);
                   backdrop-filter: saturate(150%) blur(20px);
   box-shadow:   0 1px 1px hsla(38, 20%, 60%, .08),
@@ -323,7 +323,7 @@ nav:hover {
 }
 
 nav.headroom--unpinned {
-  /* transform: translateY(-8em); */
+  transform: translateY(-8em);
 }
 
 nav .navbar {
@@ -543,7 +543,14 @@ footer {
 
 .limit-width.recipe {
   padding: 0;
+  max-width: 1280px;
 }
+
+.limit-width.hero {
+  padding: 4em;
+}
+
+
 
 #disqus_thread {
   margin: 10em auto;
@@ -1273,10 +1280,6 @@ table.brewing-log--more td {
   nav {
     width: 100%;
     margin-left: 0;
-  }
-
-  nav ul {
-    transform: translateY(-.4em);
   }
 
   nav ul > li {

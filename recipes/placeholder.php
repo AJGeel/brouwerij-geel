@@ -46,7 +46,7 @@
 
       <div class="container">
 
-        <section class="hero outlined limit-width">
+        <section class="recipe hero outlined limit-width">
           <div class="hero--left">
             <p class="category">Place / Holder</p>
             <p class="publish-date">MM DD<sup>th</sup>, YYYY</p>

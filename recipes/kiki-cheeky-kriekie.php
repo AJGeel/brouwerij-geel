@@ -45,7 +45,7 @@
     <main id="swup" class="swup-transition-main">
 
       <div class="container">
-        <section class="hero outlined limit-width">
+        <section class="recipe hero outlined limit-width">
           <div class="hero--left">
             <p class="category">Cider / Craft Cider</p>
             <p class="publish-date">October 21<sup>st</sup>, 2019</p>

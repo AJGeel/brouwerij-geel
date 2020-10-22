@@ -46,7 +46,7 @@
 
       <div class="container">
 
-        <section class="hero outlined limit-width">
+        <section class="recipe hero outlined limit-width">
           <div class="hero--left">
             <p class="category">Wine / Red Wine</p>
             <p class="publish-date">February 28<sup>th</sup>, 2020</p>

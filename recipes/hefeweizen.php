@@ -20,7 +20,7 @@
 
       <div class="container">
 
-        <section class="hero outlined limit-width">
+        <section class="recipe hero outlined limit-width">
           <div class="hero--left">
             <p class="category">Beer / Craft Beer</p>
             <p class="publish-date">April 25<sup>th</sup>, 2020</p>
