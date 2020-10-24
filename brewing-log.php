@@ -72,12 +72,12 @@
                 <td>India Pale Ale</td>
                 <td>5</td>
                 <td>1.057</td>
-                <td>1.000</td>
-                <td>0</td>
+                <td>1.013</td>
+                <td>5.8</td>
                 <td>51</td>
-                <td>0</td>
+                <td>8</td>
                 <td>Hazy</td>
-                <td>Soon 👀</td>
+                <td>2020-10-23</td>
               </tr>
               <tr>
                 <td>012</td>
@@ -85,12 +85,12 @@
                 <td>Cider</td>
                 <td>4</td>
                 <td>1.046</td>
-                <td>1.000</td>
-                <td>0</td>
+                <td>1.005</td>
+                <td>5.4</td>
                 <td>0</td>
                 <td>2</td>
-                <td>Clear</td>
-                <td>Soon 👀</td>
+                <td>Slight Haze</td>
+                <td>2020-10-23</td>
               </tr>
               <tr>
                 <td>011</td>
