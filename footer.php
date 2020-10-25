@@ -13,6 +13,8 @@
         <li><a class="textlink" href="/about-us.php">About Brouwerij Geel</a></li>
         <li><a class="textlink" href="/brewing-log.php">Brewing Log</a></li>
         <li><a class="textlink" href="/privacy-policy.php">Privacy Policy</a></li>
+        <li><a class="textlink" href="/tools">Brewing Tools</a></li>
+        <li><a class="textlink" href="/blog">Articles</a></li>
       </ul>
     </div>
     <div class="column">

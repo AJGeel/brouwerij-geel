@@ -79,6 +79,42 @@ function init() {
       gap: '2rem',
     }).mount();
   }
+
+  if (document.querySelectorAll('.tool__page')[0] !== undefined) {
+    console.log('Tool detected!');
+
+    const inputOG = document.getElementById('inputOG');
+    const inputFG = document.getElementById('inputFG');
+
+    const formulaLink = document.getElementById('formulaLink');
+    const formulaBox = document.querySelector('.formula');
+
+    // Eventlistener: toggle the state once clicked.
+    formulaLink.addEventListener('click', function() {
+      if (formulaLink.innerText === '🤔 Remind me of that formula again...') {
+        formulaBox.style.display = 'block';
+        formulaLink.innerText = "I've had enough.. no more physics for me! 😱";
+      } else {
+        formulaBox.style.display = 'none';
+        formulaLink.innerText = "🤔 Remind me of that formula again...";
+      }
+    })
+
+    // Accessibility: adding the same eventlistener to hitting enter on the selected tag.
+    formulaLink.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        if (formulaLink.innerText === '🤔 Remind me of that formula again...') {
+          formulaBox.style.display = 'block';
+          formulaLink.innerText = "I've had enough.. no more physics for me! 😱";
+        } else {
+          formulaBox.style.display = 'none';
+          formulaLink.innerText = "🤔 Remind me of that formula again...";
+        }
+      }
+    })
+
+    updateABV();
+  }
 }
 
 // Run 'init' function whenever swup has replaced the content

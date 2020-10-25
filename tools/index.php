@@ -11,27 +11,6 @@
 
     <?php include '../links.php' ?>
 
-    <style media="screen">
-      .my-20 {
-        margin-top: 20em;
-        margin-bottom: 20em;
-      }
-
-      .mt-2 {
-        margin-top: 2em;
-      }
-
-      .header--m {
-        font-size: 1.6em;
-        font-family: 'Sen', sans-serif;
-      }
-
-      ul.no-hover>li:hover {
-        background: none;
-        cursor: initial;
-      }
-    </style>
-
   </head>
   <body>
 
@@ -40,17 +19,29 @@
     <main id="swup" class="swup-transition-main">
 
       <div class="container limit-width">
-        <div class="my-20">
-          <h2 class="header--m">Tools:</h2>
-          <p>In the future, this section may include but is not limited to:</p>
-          <ul class="mt-2 no-hover">
-            <li><a href="/tools/abv-calculator">Alcohol by Volume (ABV) Calculator</a>.</li>
-            <li>Brew Timer (with presets).</li>
-            <li>Others &mdash; suggestions?</li>
-          </ul>
+
+        <div class="tool__wrapper">
+          <div class="tool__description">
+            <h2 class="tool__header">Brouwerij Geel's Brewing Tools</h2>
+            <p>These digital tools were built to support our brewing process by automating common tasks that involve calculations, estimations or remembering stuff. Perhaps these can help your brewing process too!</p>
+          </div>
         </div>
 
+        <div class="gallery fade-in">
+          <a href="/tools/abv-calculator" class="thumbnail">
+            <div class="thumbnail__image" style="background-image: url('/i/tools/abv-calc.png'); background-position: center; background-size: cover"></div>
+            <p class="thumbnail__title">Alcohol by Volume (ABV) Calculator</p>
+            <p class="thumbnail__description">This tool helps you find the Alcohol by Volume (ABV) of your brew based on measured changes in specific gravity.</p>
+          </a>
+          <a href="#!" class="thumbnail">
+            <div class="thumbnail__image"></div>
+            <p class="thumbnail__title">Placeholder</p>
+            <p class="thumbnail__description">We are working on building other tools too. Stay tuned for more.</p>
+          </a>
+
+        </div>
       </div>
+
 
       <?php include('../footer.php'); ?>
 

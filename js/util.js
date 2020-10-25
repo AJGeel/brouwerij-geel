@@ -539,3 +539,74 @@ function createDisqusThread() {
   s.setAttribute('data-timestamp', + new Date());
   (d.head || d.body).appendChild(s);
 }
+
+/* Tool-related things */
+function updateABV() {
+  // Grab latest values from the form
+  const OG = inputOG.value;
+  const FG = inputFG.value;
+  const outputABV = document.getElementById('abv');
+
+  // Calculate the new ABV
+  let newABV = calculateABV(OG, FG);
+  let fontSize = 1 + newABV / 150;
+
+  // Update the ABV's text accordingly
+  outputABV.innerText = newABV;
+  outputABV.style.fontSize = `${fontSize}em`;
+
+  // outputABV.style.fontSize = `1${newABV}`
+  outputABV.title = 'ABV estimated through measurements of original- and final specific gravities.';
+
+  if (newABV >= 0) {
+    outputABV.classList = "";
+  } else {
+    outputABV.classList = "impossible";
+
+    outputABV.title = 'Interesting thought, but a negative amount of alcohol simply is not possible. \n\n You should either raise your OG, lower your FG, or a combination of both.';
+  }
+
+  // Add small animation as augmented feedback
+  const abvWindow = outputABV.parentElement.parentElement;
+  abvWindow.style.transform = 'scale(1.035)';
+  abvWindow.style.backgroundColor = 'rgba(255,255,255,.4)';
+  abvWindow.style.boxShadow = '0 2px 2px hsla(38,20%,60%,.08), 0 4px 4px hsla(38,20%,60%,.12), 0 8px 8px hsla(38,20%,60%,.12), 0 16px 16px hsla(38,20%,60%,.12)';
+
+  setTimeout(function() {
+    abvWindow.style.transform = 'scale(1)';
+    abvWindow.style.backgroundColor = 'transparent';
+    abvWindow.style.boxShadow = 'none';
+  }, 100)
+}
+
+function abvPreset(newOG, newFG) {
+  // Update OG and FG
+  updateGravity(inputOG, newOG)
+  updateGravity(inputFG, newFG)
+  // Update resulting ABV
+  updateABV();
+}
+
+function updateGravity(target, newValue) {
+  target.value = newValue;
+}
+
+function clickTablePreset(target) {
+  let newOG = target.children[1].innerText;
+  let newFG = target.children[2].innerText;
+
+  abvPreset(newOG, newFG);
+}
+
+// Function that calculates ABV based on original gravity and final gravity.
+// ABV = ((( OG - FG ) * 1.05 ) / FG ) / 0.79
+function calculateABV(OG, FG) {
+  const ethanolWeight = 1.05;
+  const ethanolDensity = 0.79;
+
+  // Calculate ABV in fractions
+  let ABV = (((OG - FG) * ethanolWeight) / FG) / ethanolDensity;
+
+  // Convert into percentages, round to two decimals
+  return (ABV * 100).toFixed(1);
+}
