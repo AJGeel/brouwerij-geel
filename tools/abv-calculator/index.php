@@ -24,7 +24,7 @@
           <p>Alcohol by Volume (ABV) Calculator</p>
         </div>
 
-        <div class="tool__wrapper tool__page">
+        <div class="tool__wrapper tool__abv-calc">
           <div class="tool__description">
             <h2 class="tool__header">Alcohol by Volume (ABV) Calculator</h2>
             <p>This tool helps you find the Alcohol by Volume (ABV) of your brew based on change in specific gravity. If you took hydrometer readings before the fermentation started <i>(Original Gravity: OG)</i> and once it ended <i>(Final Gravity: FG)</i>, you can use a formula to calculate the resulting alcohol.</p>

@@ -33,8 +33,13 @@
             <p class="thumbnail__title">Alcohol by Volume (ABV) Calculator</p>
             <p class="thumbnail__description">This tool helps you find the Alcohol by Volume (ABV) of your brew based on measured changes in specific gravity.</p>
           </a>
+          <a href="/tools/hydrometer-temperature" class="thumbnail">
+            <div class="thumbnail__image placeholder"></div>
+            <p class="thumbnail__title">Hydrometer Temperature Correction</p>
+            <p class="thumbnail__description">This tool helps you correct specific gravity to the calibrated temperature.</p>
+          </a>
           <a href="#!" class="thumbnail">
-            <div class="thumbnail__image"></div>
+            <div class="thumbnail__image placeholder"></div>
             <p class="thumbnail__title">Placeholder</p>
             <p class="thumbnail__description">We are working on building other tools too. Stay tuned for more.</p>
           </a>

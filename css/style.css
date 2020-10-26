@@ -1534,6 +1534,13 @@ ul.no-hover>li:hover {
   box-shadow: inset 0px 0px 30px hsl(40deg 29% 10% / 10%);
 }
 
+.thumbnail__image.placeholder {
+  background-color: #eee6d8;
+  background-image: url('/i/tools/hideout.svg');
+  background-repeat: repeat;
+  background-size: 30px;
+}
+
 .thumbnail__title {
   font-family: 'Sen', sans-serif;
   font-size: 1.1rem;

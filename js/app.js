@@ -80,8 +80,7 @@ function init() {
     }).mount();
   }
 
-  if (document.querySelectorAll('.tool__page')[0] !== undefined) {
-    console.log('Tool detected!');
+  if (document.querySelectorAll('.tool__abv-calc')[0] !== undefined) {
 
     const inputOG = document.getElementById('inputOG');
     const inputFG = document.getElementById('inputFG');
