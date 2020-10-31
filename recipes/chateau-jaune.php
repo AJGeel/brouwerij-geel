@@ -204,8 +204,8 @@ footer .social:hover{
 .other-brews .carrousel .carrousel--cell:hover .brew-label{
     box-shadow:0 2px 2px hsla(216,20%,60%,.06),0 4px 4px hsla(216,20%,60%,.08),0 8px 8px hsla(216,20%,60%,.12),0 16px 16px hsla(216,20%,60%,.16)
 }
-nav .navbar svg {
-    background: linear-gradient(45deg, white, var(--royal-gold-light))
+nav .logo svg {
+    background: linear-gradient(45deg, var(--royal-gold-sand), var(--royal-gold-light))
 }
 
     </style>

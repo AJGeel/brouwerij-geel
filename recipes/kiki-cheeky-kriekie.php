@@ -225,6 +225,10 @@
         box-shadow:0 2px 2px hsla(331,20%,60%,.06),0 4px 4px hsla(331,20%,60%,.08),0 8px 8px hsla(331,20%,60%,.12),0 16px 16px hsla(331,20%,60%,.16)
     }
 
+    nav .logo svg {
+        background: linear-gradient(45deg, var(--royal-gold-sand), var(--royal-gold-light))
+    }
+
   </style>
 
   </main>

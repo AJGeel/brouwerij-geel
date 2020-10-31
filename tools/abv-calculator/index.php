@@ -54,7 +54,7 @@
 
       </div>
 
-      <div class="container light-bg fade-in">
+      <div class="container light-bg">
         <section class="limit-width sm-w100">
           <h2 class="tool__header">Common specific gravity ranges</h2>
           <p class="mw-half">Experimenting is fun and all, but most of the times we just follow recipes &mdash; or at least base our reasoning on existing recipes. The table below contains a number of popular brewing styles and their characteristics. You may click them to transfer their data to the calculator.</p>

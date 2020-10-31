@@ -61,6 +61,41 @@ const allOtherBrews = [
   </a>`
 ];
 
+const allBrewUrls = [
+  'toffee-apple', 'gembier', 'dry-hopped-cider', 'kiki-cheeky-kriekie', 'chateau-jaune', 'ipa-pocalypse', 'hefeweizen'
+];
+
+function selectRandomBrewUrl() {
+  // Randomly select one out of all potential recipe urls
+  let url = getRandom(allBrewUrls, 1);
+
+  // before the url, after the url..
+  const pre = '/recipes/';
+  const post = '.php';
+
+  // Concatenate strings to generate a valid URL
+  url = `${pre}${url}${post}`;
+  return url;
+}
+
+// Function used in the nav menu: adjusts the href of the button to direct to a random recipe
+function imFeelingLucky(target) {
+  // Check url of current page
+  const thisPageURL = window.location.pathname;
+
+
+  // Grab a random URL
+  let newURL = selectRandomBrewUrl();
+
+  // Ensure the user is never sent to the page they are on
+  while (newURL === thisPageURL) {
+    newURL = selectRandomBrewUrl();
+  }
+
+  // Redirect browser to target URL
+  target.href = newURL;
+}
+
 // To contain a copy of the brews, will be edited.
 let otherBrews = [];
 
@@ -503,7 +538,49 @@ function updatePageTitle() {
 
   document.title = `${standardTitle}${articleTitle}`;
 }
+/*
 
+ _   _     __      ______          _____
+| \ | |   /\ \    / /  _ \   /\   |  __ \
+|  \| |  /  \ \  / /| |_) | /  \  | |__) |
+| . ` | / /\ \ \/ / |  _ < / /\ \ |  _  /
+| |\  |/ ____ \  /  | |_) / ____ \| | \ \
+|_| \_/_/    \_\/   |____/_/    \_\_|  \_\
+
+
+*/
+
+function toggleSubmenu(targ) {
+  /* Find the clicked item */
+  const newTarget = targ.parentElement;
+
+  // If the target submenu is already open:
+  if (newTarget.classList.contains('active')) {
+    // Close it.
+    newTarget.classList.remove('active');
+  } else {
+    // Otherwise: ensure all other submenus are closed...
+    closeAllMenus();
+
+    // ... and open this submenu
+    newTarget.classList.add('active');
+  }
+}
+
+function closeAllMenus() {
+  const submenuWrappers = document.querySelectorAll('.navbar__link-parent');
+
+  for (let i = 0; i < submenuWrappers.length; i++) {
+    if (submenuWrappers[i].classList.contains('active')) {
+      submenuWrappers[i].classList.remove('active');
+    }
+  }
+}
+
+function underConstruction(description) {
+  alert(`Hi there! This project is under continuous development, and we are updating the very thing you tried to access. \n \nThe '${description}' feature should be live soon!`)
+  // closeAllMenus();
+}
 
 /*
 

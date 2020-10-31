@@ -342,7 +342,7 @@ nav .navbar > a {
   line-height: 0;
 }
 
-nav .navbar svg {
+nav .logo svg {
   max-width: 100%;
   height: 4em;
   background-color: var(--royal-gold);
@@ -360,19 +360,19 @@ nav .navbar svg {
           animation: fadeInTop 1s ease-in-out; */
 }
 
-nav .navbar svg:hover {
+nav .logo svg:hover {
   /* box-shadow:   0 1px 2px hsla(38, 20%, 60%, .16),
   0 2px 4px hsla(38, 20%, 60%, .24),
   0 4px 8px hsla(38, 20%, 60%, .32),
   0 8px 16px hsla(38, 20%, 60%, .40); */
 }
 
-nav .navbar svg path {
+nav .logo svg path {
   fill: var(--royal-gold-dark);
   transition: fill .2s ease-in-out;
 }
 
-nav .navbar svg:hover path {
+nav .logo svg:hover path {
   fill :var(--royal-gold);
 }
 
@@ -411,6 +411,165 @@ nav ul > li a:hover {
 
 nav ul > li:before {
   content: none;
+}
+
+.navbar__links {
+  display: flex;
+}
+
+.navbar__link {
+  font-family: 'Sen', sans-serif;
+  text-decoration: none;
+  color: var(--royal-gold-dark);
+  margin-left: 2rem;
+
+  display: flex;
+  cursor: pointer;
+}
+
+.navbar__link-parent {
+  pointer-events: none;
+}
+
+.navbar__link-main {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  transition: color .1s ease-in-out;
+}
+
+.navbar__link:hover, .navbar__link.active {
+  color: var(--royal-gold);
+}
+
+.navbar__link-main:active {
+  color: var(--royal-gold-dark);
+}
+
+.navbar__link-main:hover svg, .navbar__link.active .navbar__link-main svg {
+  transform: translateY(.125rem);
+}
+
+.navbar__link-main:active svg {
+  transform: translateY(.25rem) !important;
+}
+
+.navbar__link-main svg {
+  width: 1rem;
+  stroke-width: 3;
+  transition: transform .2s ease-in-out;
+}
+
+.navbar__link-main svg {
+  margin-left: .25rem
+}
+
+/* Make sure the submenus are hidden if the navbar is too */
+.headroom--unpinned .navbar__link.active .nav__submenu-inner {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  transform: scale(.95) translateY(2rem);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navbar__link.active .nav__submenu-inner {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav__submenu-inner {
+  /* By default: hide the submenu, until the parent menu is clicked. */
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  transform: scale(.95) translateY(2rem);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out, -webkit-filter .2s ease-in-out;
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out, filter .2s ease-in-out;
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out, filter .2s ease-in-out, -webkit-filter .2s ease-in-out;
+  cursor: initial;
+}
+
+.nav__submenu {
+  position: absolute;
+  top: 3.5rem;
+  width: 420px;
+  transform: translateX(-80%);
+
+}
+
+.nav__submenu-inner {
+  background-color: #fff;
+  padding: .75rem;
+  border-radius: 4px;
+  box-shadow: 0 0px 1px hsla(38,20%,60%,.08),
+              0 0px 2px hsla(38,20%,60%,.12),
+              0 0px 4px hsla(38,20%,60%,.16),
+              0 0px 8px hsla(38,20%,60%,.20);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Sen', sans-serif;
+}
+
+.nav__submenu-link {
+  /* border: 1px solid red; */
+  display: flex;
+  padding: .75rem;
+  text-decoration: none;
+  color: var(--royal-gold-dark);
+  transition: background-color .2s ease-in-out;
+  border-radius: 4px;
+}
+
+.nav__submenu-link > img, .nav__submenu-link > svg {
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.nav__submenu-link > svg {
+  width: 24px;
+  height: 24px;
+}
+
+.nav__submenu-title {
+  
+}
+
+.nav__submenu-subtitle {
+  font-size: .9rem;
+  opacity: .7;
+  line-height: 1.2rem;
+  margin-top: .25rem;
+}
+
+.nav__submenu-link:hover {
+  background-color: var(--royal-gold-sand);
+}
+
+.nav__submenu-secondary {
+  background-color: var(--royal-gold-select);
+  margin: -.75rem;
+  margin-top: .75rem;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: .5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__submenu-secondary .nav__submenu-link {
+  margin: 0 .25rem;
+}
+
+.nav__submenu-secondary svg {
+  margin-right: .5rem;
+  opacity: .6;
 }
 
 footer {
@@ -1254,10 +1413,6 @@ ul.no-hover>li:hover {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 4em;
-
-  -webkit-animation: fadeIn 2s ease-in-out;
-
-          animation: fadeIn 2s ease-in-out;
 }
 
 .tool__wrapper > div {
@@ -1649,7 +1804,7 @@ ul.no-hover>li:hover {
     padding-right: 2em;
   }
 
-  nav .navbar svg {
+  nav .logo svg {
     height: 4em;
     padding: 0 1.5em;
     /* transform: translateX(-2em); */

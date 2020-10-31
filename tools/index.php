@@ -27,7 +27,7 @@
           </div>
         </div>
 
-        <div class="gallery fade-in">
+        <div class="gallery">
           <a href="/tools/abv-calculator" class="thumbnail">
             <div class="thumbnail__image" style="background-image: url('/i/tools/abv-calc.png'); background-position: center; background-size: cover"></div>
             <p class="thumbnail__title">Alcohol by Volume (ABV) Calculator</p>
