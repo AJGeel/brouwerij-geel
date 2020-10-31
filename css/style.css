@@ -415,6 +415,7 @@ nav ul > li:before {
 
 .navbar__links {
   display: flex;
+  align-items: center;
 }
 
 .navbar__link {
@@ -538,7 +539,7 @@ nav ul > li:before {
 }
 
 .nav__submenu-title {
-  
+
 }
 
 .nav__submenu-subtitle {
@@ -570,6 +571,53 @@ nav ul > li:before {
 .nav__submenu-secondary svg {
   margin-right: .5rem;
   opacity: .6;
+}
+
+.navbar__hamburger {
+  width: 66px;
+  height: 64px;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  background: linear-gradient(45deg, white, var(--royal-gold-light));
+  transition: box-shadow .2s ease-in-out;
+  margin-right: auto;
+}
+
+.navbar__hamburger.active {
+  box-shadow: inset 0 0 15px rgba(0,0,0,.4);
+  background: linear-gradient(45deg, var(--royal-gold), var(--royal-gold-light));
+}
+
+.navbar__hamburger svg {
+  width: 28px;
+  height: 100%;
+
+  position: absolute;
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+}
+
+.navbar__hamburger.active svg {
+  transform: rotate(-180deg);
+}
+
+.navbar__hamburger.active #icon-hamburger {
+  opacity: 0;
+}
+
+.navbar__hamburger #icon-hamburger {
+  opacity: 1;
+}
+
+.navbar__hamburger #icon-close {
+  opacity: 0;
+}
+
+.navbar__hamburger.active #icon-close {
+  opacity: 1;
 }
 
 footer {
@@ -1780,28 +1828,16 @@ ul.no-hover>li:hover {
   nav {
     width: 100%;
     margin-left: 0;
-  }
-
-  nav ul > li {
-    margin-left: .5em;
-  }
-
-  nav ul > li:nth-of-type(2) {
-    margin-left: 0;
-  }
-
-  nav ul > li span {
-    display: none;
-  }
-
-  nav .hide-for-mobile {
-    display: none;
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
   }
 
   nav .navbar {
     /* max-width: calc(1280px + 2 * 2em); */
     max-width: calc(1280px - -2 * 4em);
-    padding-right: 2em;
+    padding-right: 0;
   }
 
   nav .logo svg {
@@ -1813,6 +1849,130 @@ ul.no-hover>li:hover {
     box-shadow: none;
     border-radius: 0px;
   }
+
+  .navbar__hamburger {
+    display: flex;
+  }
+
+  .navbar.active .navbar__links {
+    opacity: 1;
+  }
+
+  .navbar__links {
+    position: absolute;
+    top: 0;
+    padding-top: 64px;
+    height: 100vh;
+    background-color: rgba(255,255,255,.95);
+
+    /* These do not work for some reason.. Perhaps due to position: absolute */
+    /* -webkit-backdrop-filter: saturate(150%) blur(20px);
+    backdrop-filter: saturate(150%) blur(20px); */
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    z-index: -1;
+  }
+
+  .navbar__link {
+    font-size: 1rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--royal-gold-select);
+    max-width: 280px;
+    width: 100%;
+    padding-bottom: 1rem;
+    pointer-events: none;
+  }
+
+  .navbar.active .navbar__link {
+    pointer-events: all;
+  }
+
+  .navbar__submenu-inner {
+    pointer-events: none;
+  }
+
+  .navbar.active .navbar__submenu-inner {
+    pointer-events: all;
+  }
+
+  .navbar__link:last-child {
+    border-bottom: none;
+  }
+
+  .navbar.active .navbar__link-parent {
+    pointer-events: all;
+  }
+
+  .navbar__link-main {
+    text-transform: uppercase;
+    font-size: .75rem;
+    color: var(--royal-gold);
+    letter-spacing: .7px;
+  }
+
+  .navbar__link-main svg {
+    display: none;
+  }
+
+  .nav__submenu {
+    position: relative;
+    transform: none;
+    top: 0;
+  }
+
+  .nav__submenu-inner {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    transform: none;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .nav__submenu-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar.active .nav__submenu-link {
+    padding: 0;
+    pointer-events: all;
+  }
+
+  .nav__submenu-link svg {
+    display: none;
+  }
+
+  .nav__submenu-image {
+    display: none;
+  }
+
+  .nav__submenu-subtitle {
+    display: none;
+  }
+
+  .nav__submenu-secondary {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+
+
 
   .footer-inner .column.main, .footer-inner > a {
     max-width: 100%;
@@ -2378,4 +2538,5 @@ html.is-animating.swup-theme-reverse.is-leaving .swup-transition-main {
             animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
   }
+}
 }

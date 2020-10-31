@@ -568,6 +568,7 @@ function toggleSubmenu(targ) {
 }
 
 function closeAllMenus() {
+  // Close all desktkop-based nav menus
   const submenuWrappers = document.querySelectorAll('.navbar__link-parent');
 
   for (let i = 0; i < submenuWrappers.length; i++) {
@@ -575,6 +576,19 @@ function closeAllMenus() {
       submenuWrappers[i].classList.remove('active');
     }
   }
+
+  // Also close all mobile-based nav menus
+  const hamburger = document.querySelector('.navbar__hamburger');
+  const navbar = document.querySelector('.navbar');
+
+  if (hamburger.classList.contains('active')) {
+    hamburger.classList.remove('active');
+  }
+
+  if (navbar.classList.contains('active')) {
+    navbar.classList.remove('active');
+  }
+
 }
 
 function underConstruction(description) {
