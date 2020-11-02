@@ -591,6 +591,23 @@ function closeAllMenus() {
 
 }
 
+function toggleHamburger(target) {
+  // Change the hamburger's DOM status
+  if (target.classList.contains('active')) {
+    target.classList.remove('active');
+  } else {
+    target.classList.add('active');
+  }
+
+  const parent = target.parentElement;
+  // Also change the nav
+  if (parent.classList.contains('active')) {
+    parent.classList.remove('active');
+  } else {
+    parent.classList.add('active');
+  }
+}
+
 function underConstruction(description) {
   alert(`Hi there! This project is under continuous development, and we are updating the very thing you tried to access. \n \nThe '${description}' feature should be live soon!`)
   // closeAllMenus();
@@ -648,12 +665,14 @@ function updateABV() {
 
   // outputABV.style.fontSize = `1${newABV}`
   outputABV.title = 'ABV estimated through measurements of original- and final specific gravities.';
+  // outputABV.ariaLabel = 'ABV estimated through measurements of original- and final specific gravities.';
 
   if (newABV >= 0) {
     outputABV.classList = "";
   } else {
     outputABV.classList = "impossible";
 
+    // outputABV.ariaLabel = 'Interesting thought, but a negative amount of alcohol simply is not possible. \n\n You should either raise your OG, lower your FG, or a combination of both.'
     outputABV.title = 'Interesting thought, but a negative amount of alcohol simply is not possible. \n\n You should either raise your OG, lower your FG, or a combination of both.';
   }
 
@@ -700,4 +719,32 @@ function calculateABV(OG, FG) {
 
   // Convert into percentages, round to two decimals
   return (ABV * 100).toFixed(1);
+}
+
+
+
+
+/* Recipes landing page functions */
+/* Checks if element (el) is currently in the viewport */
+function isElementInViewport(el) {
+  let rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function checkIfInView() {
+
+  for (var i = 0; i < timelineItems.length; i++) {
+    if (isElementInViewport(timelineItems[i])) {
+      if(!timelineItems[i].classList.contains("in-view")){
+        timelineItems[i].classList.add("in-view");
+      }
+    } else if(timelineItems[i].classList.contains("in-view")) {
+        timelineItems[i].classList.remove("in-view");
+    }
+  }
 }

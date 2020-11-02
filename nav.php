@@ -38,7 +38,7 @@
 
             </div>
             <div class="nav__submenu-secondary">
-              <a href="#!" class="nav__submenu-link" onclick="underConstruction(`All recipes`)">
+              <a href="/recipes/" class="nav__submenu-link" onclick="closeAllMenus()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
@@ -57,7 +57,7 @@
       <a class="navbar__link" href="/about-us.php" onclick="closeAllMenus()">
         <span>Our Story</span>
       </a>
-      <a class="navbar__link" href="/brewing-log.php" onclick="closeAllMenus()">
+      <a class="navbar__link" href="/brewing-archive.php" onclick="closeAllMenus()">
         <span>Brewing Archive</span>
       </a>
       <div class="navbar__link navbar__link-parent">
@@ -70,7 +70,7 @@
         <div class="nav__submenu">
           <div class="nav__submenu-inner">
             <div class="nav__submenu-main">
-              <a href="#!" class="nav__submenu-link" onclick="underConstruction(`Articles & Thoughts`)">
+              <a href="/articles" class="nav__submenu-link" onclick="closeAllMenus()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
@@ -128,24 +128,3 @@
     </div>
   </div>
 </nav>
-
-
-<script type="text/javascript">
-function toggleHamburger(target) {
-  // Change the hamburger's DOM status
-  if (target.classList.contains('active')) {
-    target.classList.remove('active');
-  } else {
-    target.classList.add('active');
-  }
-
-  const parent = target.parentElement;
-  // Also change the nav
-  if (parent.classList.contains('active')) {
-    parent.classList.remove('active');
-  } else {
-    parent.classList.add('active');
-  }
-}
-
-</script>

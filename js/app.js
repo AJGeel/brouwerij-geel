@@ -1,10 +1,12 @@
+/* Global variables */
 // Headroom.JS
 const nav = document.querySelector('nav');
+let timelineItems;
+
 let headroom = new Headroom(nav);
 headroom.init();
 
 const swup = new Swup();
-
 init();
 
 
@@ -78,6 +80,13 @@ function init() {
       // fixedWidth: '60%',
       gap: '2rem',
     }).mount();
+  }
+
+  if (document.querySelectorAll('.timeline')[0] !== undefined) {
+    timelineItems = document.querySelectorAll(".timeline .timeline__item");
+    // console.log(timelineItems);
+    window.addEventListener("load", checkIfInView);
+    window.addEventListener("scroll", checkIfInView);
   }
 
   if (document.querySelectorAll('.tool__abv-calc')[0] !== undefined) {

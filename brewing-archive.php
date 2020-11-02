@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-    <title>Brouwerij Geel &mdash; Brewing Log</title>
+    <title>Brouwerij Geel &mdash; Brewing Archive</title>
     <meta name="description" content="Brouwerij Geel is an independent nano-brewery based in Utrecht, the Netherlands. We have been brewing ciders & beers since 2017, and we occasionally dabble in wine-making too!">
     <meta name="keywords" content="Brouwerij Geel, Brouwerij, Geel, Arthur Geel, Beer, Cider, Homebrewing, Homebrew, Alcohol, Brewery, Nano Brewery, Design, Historic">
     <meta name="author" content="Arthur Geel, hello@arthurgeel.com">
@@ -22,8 +22,8 @@
 
         <div class="grid">
           <div class="grid--cell">
-            <h1 class="brewing-log--title">Brewing Log</h1>
-            <p class="paragraph">Welcome to <i>Brouwerij Geel's Brewing Log</i>. On this page you'll find an overview of every single thing we have brewed over the years, including defining characteristics such as <i>Style</i>, <i>Alcohol Percentage</i>, <i>Bitterness</i>, <i>Colour</i> and <i>Clarity</i>.</p>
+            <h1 class="brewing-log--title">Brewing Archive</h1>
+            <p class="paragraph">Welcome to <i>Brouwerij Geel's Brewing Archive</i>. On this page you'll find an overview of every single thing we have brewed over the years, including defining characteristics such as <i>Style</i>, <i>Alcohol Percentage</i>, <i>Bitterness</i>, <i>Colour</i> and <i>Clarity</i>.</p>
             <p class="paragraph">For most brews we have created a page where you'll find instructions on how to recreate it. Click on the underlined link on the <i>Brew Name</i> to access these. Cheers! 🍻</p>
 
           </div>
