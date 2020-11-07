@@ -9,6 +9,7 @@
     <meta name="author" content="Arthur Geel, hello@arthurgeel.com">
 
     <?php include 'links.php' ?>
+    <?php include 'components/ascii-biertje.php'; ?>
   </head>
   <body>
 
