@@ -615,6 +615,7 @@ footer {
   padding: 4em;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footer-inner .column {
