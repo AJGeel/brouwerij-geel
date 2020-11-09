@@ -14,7 +14,7 @@
         <li><a class="textlink" href="/brewing-archive.php">Brewing Archive</a></li>
         <li><a class="textlink" href="/articles">Articles &amp; Thoughts</a></li>
         <li><a class="textlink" href="/tools">Brewing Tools</a></li>
-        <li><a class="textlink" href="/privacy-policy.php">Privacy</a></li>
+        <li><a class="textlink" href="/privacy.php">Privacy</a></li>
       </ul>
     </div>
     <div class="column">

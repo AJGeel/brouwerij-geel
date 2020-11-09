@@ -9,12 +9,16 @@ headroom.init();
 const swup = new Swup();
 init();
 
+let cookiePreferences;
 
 
 function init() {
 
   // Scroll to top
   scrollToTop();
+
+  // Check cookies
+  checkPreferences();
 
   // Check which utility functions need to be ran, dependent on page content.
 

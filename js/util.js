@@ -748,3 +748,65 @@ function checkIfInView() {
     }
   }
 }
+
+
+/* Cookie functionalities */
+
+function setCookie(cname, cvalue, exdays) {
+  let d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) === ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) === 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkPreferences() {
+  let cookiePreferences = getCookie("cookiePreferences");
+  if (cookiePreferences === "functional" || cookiePreferences === "all") {
+    // Do nothing. Cookies are properly set.
+
+    console.log(`Your cookie preferences are '${getCookie("cookiePreferences")} cookies'.`);
+  } else {
+    // Cookies improperly set. Eventually this should summon a modal / popup / snackbar, but now we will just auto set the cookie to an acceptable minimum.
+    updateCookiePreferences("functional");
+    cookiePreferences = "functional";
+    console.log(`Oops, something went wrong. Your cookie preferences are now '${getCookie("cookiePreferences")} cookies'.`);
+  }
+
+  // Check if we're on the /privacy page
+  if (document.querySelectorAll('.privacy')[0] !== undefined) {
+    // If so: update the user's selected state.
+    const formInput = document.querySelector('form').querySelectorAll('input');
+    if (cookiePreferences === "functional") {
+      formInput[0].checked = true;
+    } else {
+      formInput[1].checked = true;
+    }
+  }
+}
+
+function updateCookiePreferences(pref) {
+  if (pref === "functional" || pref === "all") {
+    // Set a cookie for one year
+    setCookie("cookiePreferences", pref, 365);
+    console.log(`Your cookie preferences are now '${getCookie("cookiePreferences")} cookies'.`);
+  } else {
+    alert("Stop trying to cheat the system. We have back-end validation in place too. We will reset you to the functional cookie settings.");
+    setCookie("cookiePreferences", "functional", 365);
+  }
+}

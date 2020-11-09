@@ -1,7 +1,7 @@
 /* Courtesy of Dev.to: https://dev.to/nitdgplug/learn-javascript-through-a-game-1beh?ck_subscriber_id=997169940 */
 
 /* Global vars — setup */
-const canvas = document.getElementById('game-area');
+const snakeCanvas = document.getElementById('game-area');
 let width, height, tileSize, scale, fps;
 let ctx;
 let snake;
@@ -18,6 +18,7 @@ let chomps_1, chomps_2, chomps_3, chomps_4, burp, boom;
 
 let hiHat, snare, kick;
 
+/* Snake game */
 // Initialize game objects
 function init() {
   // Key game setup
@@ -41,16 +42,16 @@ function init() {
   // lightGold = 'hsl(302deg 100% 90%)'; /* Nienke Roze */
 
   // SFX
-  chomps_1 = new sound('s_chomps_1.mp3', 1);
-  chomps_2 = new sound('s_chomps_2.mp3', 1);
-  chomps_3 = new sound('s_chomps_3.mp3', 1);
-  chomps_4 = new sound('s_chomps_4.mp3', 1);
-  burp = new sound('s_burp.mp3', .7);
-  boom = new sound('s_boom.mp3', .7);
+  chomps_1 = new sound('sounds/s_chomps_1.mp3', 1);
+  chomps_2 = new sound('sounds/s_chomps_2.mp3', 1);
+  chomps_3 = new sound('sounds/s_chomps_3.mp3', 1);
+  chomps_4 = new sound('sounds/s_chomps_4.mp3', 1);
+  burp = new sound('sounds/s_burp.mp3', .7);
+  boom = new sound('sounds/s_boom.mp3', .7);
 
-  hiHat = new sound('s_hiHat.mp3', .1);
-  kick = new sound('s_kick.mp3', .7);
-  snare = new sound('s_snare.mp3', .7);
+  hiHat = new sound('sounds/s_hiHat.mp3', .1);
+  kick = new sound('sounds/s_kick.mp3', .7);
+  snare = new sound('sounds/s_snare.mp3', .7);
 
 
   // Full-screen canvas:
@@ -64,10 +65,10 @@ function init() {
     width = scale * ( tileSize * Math.floor((adm.offsetWidth - 2*padding) / tileSize) );
     height = scale * ( tileSize * Math.floor(adm.offsetHeight / tileSize) );
 
-    canvas.width = width;
-    canvas.height = height;
+    snakeCanvas.width = width;
+    snakeCanvas.height = height;
   }
-  ctx = canvas.getContext('2d');
+  ctx = snakeCanvas.getContext('2d');
 
   snake = new Snake({
     x: tileSize * Math.floor(width / (2 * tileSize)),
@@ -83,8 +84,8 @@ function init() {
 
 // The actual game function
 function game() {
-  // Remove canvas CSS modifiers (if any)
-  canvas.className = ""
+  // Remove snakeCanvas CSS modifiers (if any)
+  snakeCanvas.className = ""
 
   // Initialize game
   init();
@@ -101,7 +102,7 @@ function update() {
 
   if (gameOver) {
     boom.play();
-    canvas.classList.add('rip');
+    snakeCanvas.classList.add('rip');
     ctx.textAlign = "center";
     ctx.font = `${fontSize}px ${fontFamily}`;
     ctx.fillStyle = `${darkGold}`;
@@ -115,8 +116,8 @@ function update() {
     return;
   }
 
-  if (canvas.classList.contains('paused')) {
-    canvas.classList.remove('paused');
+  if (snakeCanvas.classList.contains('paused')) {
+    snakeCanvas.classList.remove('paused');
   }
 
   inputPending = false;
@@ -129,9 +130,9 @@ function update() {
 
   if (snake.eat()) {
     // Add small screen shake
-    canvas.classList.add('chomp');
+    snakeCanvas.classList.add('chomp');
     setTimeout(function() {
-      canvas.classList.remove('chomp');
+      snakeCanvas.classList.remove('chomp');
     }, 350);
 
     let rand = Math.random();
@@ -149,12 +150,12 @@ function update() {
     if (rand2 <= .25) {
       setTimeout(function (){
         // Add medium screen shake
-        canvas.classList.add('burp');
+        snakeCanvas.classList.add('burp');
         burp.play();
       }, 400);
 
       setTimeout(function() {
-        canvas.classList.remove('burp');
+        snakeCanvas.classList.remove('burp');
       }, 800);
     }
 
@@ -221,12 +222,12 @@ function showPaused() {
   ctx.font = `${fontSize * .677}px ${fontFamily}`;
   ctx.fillStyle = `${darkGold}`;
   ctx.fillText("Paused — press 'spacebar' to continue.", width / 2, height / 2);
-  canvas.classList.add('paused');
+  snakeCanvas.classList.add('paused');
 }
 
 // Determining a random spawn location on the grid
 function spawnLocation() {
-  // Breaking the entire canvas into a grid of tiles
+  // Breaking the entire snakeCanvas into a grid of tiles
   // let rows = width / tileSize;
   // let cols = height / tileSize;
   //
@@ -416,6 +417,8 @@ class Snake {
   }
 }
 
+
+
 // Adding an event listener for key presses.
 window.addEventListener("keydown", function (e) {
   if (e.key === " ") {
@@ -468,8 +471,8 @@ window.addEventListener("load", function() {
   game();
 });
 
-// When the game is over, the user may reset the game by clickin on the canvas.
-canvas.addEventListener("click", function() {
+// When the game is over, the user may reset the game by clickin on the snakeCanvas.
+snakeCanvas.addEventListener("click", function() {
   if (gameOver) {
     game();
   }
