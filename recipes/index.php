@@ -46,14 +46,14 @@
           <div class="nth-child-reset"></div>
 
           <div class="timeline__item ">
-            <a href="#!" class="timeline__metadata">
-              <img src="/i/labels/placeholder.jpg" alt="Placeholder Label">
+            <a href="/recipes/sweet-and-sour-lemon-ipa.php" class="timeline__metadata">
+              <img src="/i/labels/sweet-and-sour-lemon-ipa.jpg" alt="Sweet and Sour Lemon IPA">
               <p class="timeline__date">October 23rd, 2020</p>
             </a>
             <div class="timeline__content">
               <h2 class="timeline__header">Sweet and Sour Lemon IPA</h2>
               <p class="timeline__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <a class="timeline__btn" href="#!">
+              <a class="timeline__btn" href="/recipes/sweet-and-sour-lemon-ipa.php">
                 <span>Check out the recipe</span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -64,7 +64,7 @@
 
           <div class="timeline__item ">
             <a href="#!" class="timeline__metadata">
-              <img src="/i/labels/placeholder.jpg" alt="Placeholder Label">
+              <img src="/i/labels/cidre-doux.jpg" alt="Cidre Doux Label">
               <p class="timeline__date">October 23rd, 2020</p>
             </a>
             <div class="timeline__content">

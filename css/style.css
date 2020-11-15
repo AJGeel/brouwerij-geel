@@ -330,6 +330,14 @@ nav {
   transition: transform .3s ease-in-out, background-color .8s cubic-bezier(0.075, 0.820, 0.165, 1.000);
 }
 
+/* November 2020: backdrop filters don't work on Firefox.
+   Make the navbar fully white and non transparent instead */
+@-moz-document url-prefix() {
+  nav {
+    background-color: rgba(255,255,255);
+  }
+}
+
 nav:hover {
   /* background-color: #fff; */
 }

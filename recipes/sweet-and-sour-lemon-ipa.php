@@ -29,7 +29,7 @@
             <button class="call-to-action" type="button" name="call-to-action" onclick="location.href='#recipe'"><span>Check out the Recipe &rarr;</span></button>
           </div>
           <div class="hero--right">
-            <img class="brew-label" src="../i/labels/placeholder.jpg" alt="Brew label" onclick="location.href='#recipe'">
+            <img class="brew-label" src="../i/labels/sweet-and-sour-lemon-ipa.jpg" alt="Sweet and Sour Lemon IPA label" onclick="location.href='#recipe'">
           </div>
         </section>
 
