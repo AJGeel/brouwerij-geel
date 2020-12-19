@@ -1,2 +1,4 @@
 *.psd
 data/
+*.min.css
+*.min.js
