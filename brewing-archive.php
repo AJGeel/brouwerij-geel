@@ -137,8 +137,8 @@
                 <td><a href="/recipes/gembier.php">Gembier (V2)</a></td>
                 <td>Ginger Beer</td>
                 <td>4</td>
-                <td>1.000</td>
-                <td>1.000</td>
+                <td>1.081</td>
+                <td>1.033</td>
                 <td>6.2</td>
                 <td>0</td>
                 <td>0</td>
@@ -150,8 +150,8 @@
                 <td><a href="/recipes/kiki-cheeky-kriekie.php">Kiki's Cheeky Kriekie</a></td>
                 <td>Cider</td>
                 <td>4</td>
-                <td>1.000</td>
-                <td>1.000</td>
+                <td>1.057</td>
+                <td>1.012</td>
                 <td>5.6</td>
                 <td>0</td>
                 <td>0</td>
@@ -163,8 +163,8 @@
                 <td><a href="/recipes/dry-hopped-cider.php">Dry-Hopped Cider</a></td>
                 <td>Cider</td>
                 <td>16</td>
-                <td>1.000</td>
-                <td>1.000</td>
+                <td>1.039</td>
+                <td>0.999</td>
                 <td>5.3</td>
                 <td>0</td>
                 <td>2</td>
@@ -176,8 +176,8 @@
                 <td><a href="/recipes/gembier.php">Gembier (V1)</a></td>
                 <td>Ginger Beer</td>
                 <td>4</td>
-                <td>1.000</td>
-                <td>1.000</td>
+                <td>1.029</td>
+                <td>1.008</td>
                 <td>2.8</td>
                 <td>0</td>
                 <td>0</td>
@@ -189,8 +189,8 @@
                 <td>Grand Cru</td>
                 <td>Amber Ale</td>
                 <td>16</td>
-                <td>1.000</td>
-                <td>1.000</td>
+                <td>1.071</td>
+                <td>1.009</td>
                 <td>8.1</td>
                 <td>27</td>
                 <td>30</td>
@@ -202,8 +202,8 @@
                 <td>Proto Gembier</td>
                 <td>Ginger Beer</td>
                 <td>4</td>
-                <td>1.000</td>
-                <td>1.000</td>
+                <td>1.021</td>
+                <td>1.006</td>
                 <td>2.2</td>
                 <td>0</td>
                 <td>0</td>
@@ -215,8 +215,8 @@
                 <td>Brut Cider</td>
                 <td>Cider</td>
                 <td>16</td>
-                <td>1.000</td>
-                <td>1.000</td>
+                <td>1.054</td>
+                <td>0.998</td>
                 <td>7.5</td>
                 <td>0</td>
                 <td>2</td>
@@ -228,11 +228,11 @@
                 <td><a href="/recipes/toffee-apple.php">Toffee Apple Cider</a></td>
                 <td>Cider</td>
                 <td>16</td>
-                <td>1.000</td>
-                <td>1.000</td>
+                <td>1.042</td>
+                <td>1.008</td>
                 <td>4.5</td>
                 <td>0</td>
-                <td>10</td>
+                <td>12</td>
                 <td>Clear</td>
                 <td>2017-12-07</td>
               </tr>
