@@ -3174,4 +3174,29 @@ html.is-animating.swup-theme-reverse.is-leaving .swup-transition-main {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* Old browsers get redirected to /incompatible-browser.php. This is the styling for the notice at that page. */
+.no-ie {
+  height: 100vh;
+  width: 100vw;
+  color: #423724;
+  background-color: #f7f5f3;
+}
+
+.no-ie > div {
+  max-width: 654px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.no-ie h1 {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.no-ie p {
+  margin-bottom: 6px;
 }
