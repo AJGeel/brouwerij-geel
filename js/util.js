@@ -810,3 +810,7 @@ function updateCookiePreferences(pref) {
     setCookie("cookiePreferences", "functional", 365);
   }
 }
+
+function isIE() {
+  return /Trident\/|MSIE/.test(window.navigator.userAgent);
+}
