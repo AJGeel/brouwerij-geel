@@ -88,15 +88,16 @@
 @media only screen and (max-width: 768px) {
   .slider__inner img {
     width: calc(400px * var(--mobileMultiplier));
+    padding: .25rem;
   }
 
   @-webkit-keyframes scrollHorizontally {
     0%   { transform: translateX(0); }
-    100% { transform: translateX(calc(( var(--imgWidth) + var(--imgMargin)) * var(--imgAmount) * var(--mobileMultiplier) * -1)); }
+    100% { transform: translateX(calc(( (var(--imgWidth) * var(--mobileMultiplier)) + var(--imgMargin)) * var(--imgAmount) * -1)); }
   }
 
   @keyframes scrollHorizontally {
     0%   { transform: translateX(0); }
-    100% { transform: translateX(calc(( var(--imgWidth) + var(--imgMargin)) * var(--imgAmount) * var(--mobileMultiplier) * -1)); }
+    100% { transform: translateX(calc(( (var(--imgWidth) * var(--mobileMultiplier)) + var(--imgMargin)) * var(--imgAmount) * -1)); }
   }
 }
