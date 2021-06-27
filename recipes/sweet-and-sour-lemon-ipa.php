@@ -206,7 +206,7 @@
 button.call-to-action:focus,button.call-to-action:hover{
     box-shadow:0 0 10px hsla(50,80%,60%,.5),0 0 30px hsla(50,80%,60%,.25)
 }
-nav{
+nav .navbar{
     box-shadow:0 1px 1px hsla(50,20%,60%,.08),0 2px 2px hsla(50,20%,60%,.12),0 4px 4px hsla(50,20%,60%,.16),0 8px 8px hsla(50,20%,60%,.2)
 }
 footer .social:hover{
