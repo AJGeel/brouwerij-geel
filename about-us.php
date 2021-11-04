@@ -9,7 +9,11 @@
     <meta name="keywords" content="Brouwerij Geel, Brouwerij, Geel, Arthur Geel, Beer, Cider, Homebrewing, Homebrew, Alcohol, Brewery, Nano Brewery, Design">
     <meta name="author" content="Arthur Geel, hello@arthurgeel.com">
 
-    <?php include 'links.php' ?>
+    <!--[if lte IE 10]><script>window.location = "/incompatible-browser.php";</script><![endif]-->
+<link rel="shortcut icon" href="i/brouwerij-geel-small.png" type="image/png" id="favicon">
+<link rel="stylesheet" href="css/reset.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+
     <?php include 'components/ascii-biertje.php'; ?>
 
   </head>
