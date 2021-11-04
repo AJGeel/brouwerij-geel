@@ -3,9 +3,9 @@
 session_start();
 // Retrieve the full request URI
 $full_url = $_SERVER[REQUEST_URI];
-// Remove the folders, only keep the {name}.php
+// Remove the folders, only keep the {name}.html
 $filename = explode("/", $full_url)[2];
-// Remove the .php file extension for the unique filename
+// Remove the .html file extension for the unique filename
 $page_id = explode(".", $filename)[0];
 // What results is the unique filename for blogs, which is in the following format:
 // "../data/views/v_${page_id}.txt"

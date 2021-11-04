@@ -9,7 +9,7 @@
     <meta name="keywords" content="Brouwerij Geel, Brouwerij, Geel, Arthur Geel, Beer, Cider, Homebrewing, Homebrew, Alcohol, Brewery, Nano Brewery, Design">
     <meta name="author" content="Arthur Geel, hello@arthurgeel.com">
 
-    <!--[if lte IE 10]><script>window.location = "/incompatible-browser.php";</script><![endif]-->
+    <!--[if lte IE 10]><script>window.location = "incompatible-browser.html";</script><![endif]-->
 <link rel="shortcut icon" href="i/brouwerij-geel-small.png" type="image/png" id="favicon">
 <link rel="stylesheet" href="css/reset.min.css">
 <link rel="stylesheet" href="css/style.min.css">
@@ -313,7 +313,7 @@
 
     </main>
 
-    <?php include('../../<!-- Libraries -->
+    <!-- Libraries -->
 <script src="../../js/modules/swup.min.js" charset="utf-8"></script>
 <script src="../../js/modules/headroom.js" charset="utf-8"></script>
 
@@ -326,8 +326,7 @@
 <script src="../../js/app.js" charset="utf-8"></script>
 
 <!-- Privacy-oriented & GDPR-compliant analytics -->
-<!-- <script async defer src="https://beampipe.io/js/tracker.js" data-beampipe-domain="brouwerijgeel.nl"></script> -->
-'); ?>
+<!-- <script async defer src="https://beampipe.io/js/tracker.js" data-beampipe-domain="brouwerijgeel.nl"></script> -->  
 
   </body>
 </html>

@@ -3181,7 +3181,7 @@ html.is-animating.swup-theme-reverse.is-leaving .swup-transition-main {
   }
 }
 
-/* Old browsers get redirected to /incompatible-browser.php. This is the styling for the notice at that page. */
+/* Old browsers get redirected to incompatible-browser.html. This is the styling for the notice at that page. */
 .no-ie {
   height: 100vh;
   width: 100vw;

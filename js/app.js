@@ -1,6 +1,6 @@
 //On page load: check for old (incompatible) browser. If so: redirect.
 if (isIE()) {
-  window.location = "/incompatible-browser.php";
+  window.location = "incompatible-browser.html";
 }
 
 /* Global variables */

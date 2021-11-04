@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="css/modules/slider.css">
 
-    <!--[if lte IE 10]><script>window.location = "/incompatible-browser.php";</script><![endif]-->
+    <!--[if lte IE 10]><script>window.location = "incompatible-browser.html";</script><![endif]-->
 <link rel="shortcut icon" href="i/brouwerij-geel-small.png" type="image/png" id="favicon">
 <link rel="stylesheet" href="css/reset.min.css">
 <link rel="stylesheet" href="css/style.min.css">
@@ -27,26 +27,26 @@
 
         <div class="slider__inner">
           <div class="slider__track">
-            <a href="/recipes/chateau-jaune.php"><img class="brew__label no-border" src="/i/labels/chateau-jaune.jpg" alt="label"/></a>
-            <a href="/recipes/cidre-doux.php"><img class="brew__label" src="/i/labels/cidre-doux.jpg" alt="label"/></a>
-            <a href="/recipes/dry-hopped-cider.php"><img class="brew__label" src="/i/labels/dry-hopped-cider.jpg" alt="label"/></a>
-            <a href="/recipes/gembier.php"><img class="brew__label" src="/i/labels/gembier.jpg" alt="label"/></a>
-            <a href="/recipes/hefeweizen.php"><img class="brew__label no-border" src="/i/labels/hefeweizen.jpg" alt="label"/></a>
-            <a href="/recipes/ipa-pocalypse.php"><img class="brew__label" src="/i/labels/ipa-pocalypse.jpg" alt="label"/></a>
-            <a href="/recipes/kiki-cheeky-kriekie.php"><img class="brew__label" src="/i/labels/kiki-cheeky-kriekie.jpg" alt="label"/></a>
-            <a href="/recipes/sweet-and-sour-lemon-ipa.php"><img class="brew__label" src="/i/labels/sweet-and-sour-lemon-ipa.jpg" alt="label"/></a>
-            <a href="/recipes/toffee-apple.php"><img class="brew__label" src="/i/labels/toffee-apple.jpg" alt="label"/></a>
+            <a href="/recipes/chateau-jaune.html"><img class="brew__label no-border" src="/i/labels/chateau-jaune.jpg" alt="label"/></a>
+            <a href="/recipes/cidre-doux.html"><img class="brew__label" src="/i/labels/cidre-doux.jpg" alt="label"/></a>
+            <a href="/recipes/dry-hopped-cider.html"><img class="brew__label" src="/i/labels/dry-hopped-cider.jpg" alt="label"/></a>
+            <a href="/recipes/gembier.html"><img class="brew__label" src="/i/labels/gembier.jpg" alt="label"/></a>
+            <a href="/recipes/hefeweizen.html"><img class="brew__label no-border" src="/i/labels/hefeweizen.jpg" alt="label"/></a>
+            <a href="/recipes/ipa-pocalypse.html"><img class="brew__label" src="/i/labels/ipa-pocalypse.jpg" alt="label"/></a>
+            <a href="/recipes/kiki-cheeky-kriekie.html"><img class="brew__label" src="/i/labels/kiki-cheeky-kriekie.jpg" alt="label"/></a>
+            <a href="/recipes/sweet-and-sour-lemon-ipa.html"><img class="brew__label" src="/i/labels/sweet-and-sour-lemon-ipa.jpg" alt="label"/></a>
+            <a href="/recipes/toffee-apple.html"><img class="brew__label" src="/i/labels/toffee-apple.jpg" alt="label"/></a>
 
             <!-- Duplicates: required for smooth transitioning -->
-            <a href="/recipes/chateau-jaune.php"><img class="brew__label no-border" src="/i/labels/chateau-jaune.jpg" alt="label"/></a>
-            <a href="/recipes/cidre-doux.php"><img class="brew__label" src="/i/labels/cidre-doux.jpg" alt="label"/></a>
-            <a href="/recipes/dry-hopped-cider.php"><img class="brew__label" src="/i/labels/dry-hopped-cider.jpg" alt="label"/></a>
-            <a href="/recipes/gembier.php"><img class="brew__label" src="/i/labels/gembier.jpg" alt="label"/></a>
-            <a href="/recipes/hefeweizen.php"><img class="brew__label no-border" src="/i/labels/hefeweizen.jpg" alt="label"/></a>
-            <a href="/recipes/ipa-pocalypse.php"><img class="brew__label" src="/i/labels/ipa-pocalypse.jpg" alt="label"/></a>
-            <a href="/recipes/kiki-cheeky-kriekie.php"><img class="brew__label" src="/i/labels/kiki-cheeky-kriekie.jpg" alt="label"/></a>
-            <a href="/recipes/sweet-and-sour-lemon-ipa.php"><img class="brew__label" src="/i/labels/sweet-and-sour-lemon-ipa.jpg" alt="label"/></a>
-            <a href="/recipes/toffee-apple.php"><img class="brew__label" src="/i/labels/toffee-apple.jpg" alt="label"/></a>
+            <a href="/recipes/chateau-jaune.html"><img class="brew__label no-border" src="/i/labels/chateau-jaune.jpg" alt="label"/></a>
+            <a href="/recipes/cidre-doux.html"><img class="brew__label" src="/i/labels/cidre-doux.jpg" alt="label"/></a>
+            <a href="/recipes/dry-hopped-cider.html"><img class="brew__label" src="/i/labels/dry-hopped-cider.jpg" alt="label"/></a>
+            <a href="/recipes/gembier.html"><img class="brew__label" src="/i/labels/gembier.jpg" alt="label"/></a>
+            <a href="/recipes/hefeweizen.html"><img class="brew__label no-border" src="/i/labels/hefeweizen.jpg" alt="label"/></a>
+            <a href="/recipes/ipa-pocalypse.html"><img class="brew__label" src="/i/labels/ipa-pocalypse.jpg" alt="label"/></a>
+            <a href="/recipes/kiki-cheeky-kriekie.html"><img class="brew__label" src="/i/labels/kiki-cheeky-kriekie.jpg" alt="label"/></a>
+            <a href="/recipes/sweet-and-sour-lemon-ipa.html"><img class="brew__label" src="/i/labels/sweet-and-sour-lemon-ipa.jpg" alt="label"/></a>
+            <a href="/recipes/toffee-apple.html"><img class="brew__label" src="/i/labels/toffee-apple.jpg" alt="label"/></a>
           </div>
         </div>
 
