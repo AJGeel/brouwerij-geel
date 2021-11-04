@@ -11,7 +11,7 @@ let timelineItems;
 let headroom = new Headroom(nav);
 headroom.init();
 
-// const swup = new Swup();
+const swup = new Swup();
 init();
 
 let cookiePreferences;
@@ -135,4 +135,4 @@ function init() {
 }
 
 // Run 'init' function whenever swup has replaced the content
-// swup.on('contentReplaced', init);
+swup.on('contentReplaced', init);
