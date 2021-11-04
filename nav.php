@@ -15,21 +15,21 @@
         <div class="nav__submenu">
           <div class="nav__submenu-inner">
             <div class="nav__submenu-main">
-              <a href="/recipes/hefeweizen.php" class="nav__submenu-link" onclick="closeAllMenus()">
+              <a href="recipes/hefeweizen.html" class="nav__submenu-link" onclick="closeAllMenus()">
                 <img class="nav__submenu-image" src="i/labels/hefeweizen.jpg" alt="Hefeweizen label thumbnail">
                 <div class="nav__submenu-content">
                   <div class="nav__submenu-title">Hefeweizen</div>
                   <div class="nav__submenu-subtitle">A classic German beer, blessed with a sweet flavour profile of clove and banana.</div>
                 </div>
               </a>
-              <a href="/recipes/ipa-pocalypse.php" class="nav__submenu-link" onclick="closeAllMenus()">
+              <a href="recipes/ipa-pocalypse.html" class="nav__submenu-link" onclick="closeAllMenus()">
                 <img class="nav__submenu-image" src="i/labels/ipa-pocalypse.jpg" alt="IPA-Pocalypse label thumbnail">
                 <div class="nav__submenu-content">
                   <div class="nav__submenu-title">IPA&mdash;Pocalypse</div>
                   <div class="nav__submenu-subtitle">Hoppy and floral IPA goodness, now in a haunting shade of red...</div>
                 </div>
               </a>
-              <a href="/recipes/kiki-cheeky-kriekie.php" class="nav__submenu-link" onclick="closeAllMenus()">
+              <a href="recipes/kiki-cheeky-kriekie.html" class="nav__submenu-link" onclick="closeAllMenus()">
                 <img class="nav__submenu-image" src="i/labels/kiki-cheeky-kriekie.jpg" alt="Kiki's Cheeky Kriekie label thumbnail">
                 <div class="nav__submenu-content">
                   <div class="nav__submenu-title">Kiki's Cheeky Kriekie</div>
@@ -39,7 +39,7 @@
 
             </div>
             <div class="nav__submenu-secondary">
-              <a href="/recipes/index.html" class="nav__submenu-link" onclick="closeAllMenus()">
+              <a href="recipes/index.html" class="nav__submenu-link" onclick="closeAllMenus()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
@@ -55,10 +55,10 @@
           </div>
         </div>
       </div>
-      <a class="navbar__link" href="/about-us.html" onclick="closeAllMenus()">
+      <a class="navbar__link" href="about-us.html" onclick="closeAllMenus()">
         <span>Our Story</span>
       </a>
-      <a class="navbar__link" href="/brewing-archive.html" onclick="closeAllMenus()">
+      <a class="navbar__link" href="brewing-archive.html" onclick="closeAllMenus()">
         <span>Brewing Archive</span>
       </a>
       <div class="navbar__link navbar__link-parent">
@@ -71,7 +71,7 @@
         <div class="nav__submenu">
           <div class="nav__submenu-inner">
             <div class="nav__submenu-main">
-              <a href="/articles/index.html" class="nav__submenu-link" onclick="closeAllMenus()">
+              <a href="articles/index.html" class="nav__submenu-link" onclick="closeAllMenus()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
@@ -80,7 +80,7 @@
                   <div class="nav__submenu-subtitle">Exploring brewing styles and techniques is in Brouwerij Geel's DNA. In this page we share our processes and findings.</div>
                 </div>
               </a>
-              <a href="/tools/index.html" class="nav__submenu-link" onclick="closeAllMenus()">
+              <a href="tools/index.html" class="nav__submenu-link" onclick="closeAllMenus()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
@@ -92,18 +92,12 @@
 
             </div>
             <div class="nav__submenu-secondary">
-              <a href="/privacy.html" class="nav__submenu-link" onclick="closeAllMenus()">
+              <a href="privacy.html" class="nav__submenu-link" onclick="closeAllMenus()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
                 <span>Privacy Policy</span>
               </a>
-              <!-- <a href="#!" class="nav__submenu-link" onclick="underConstruction(`Placeholder... oh wait`)">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
-                </svg>
-                <span>Placeholder</span>
-              </a> -->
             </div>
           </div>
         </div>
