@@ -11,4 +11,4 @@
 <script src="/js/app.js" charset="utf-8"></script>
 
 <!-- Privacy-oriented & GDPR-compliant analytics -->
-<script async defer src="https://beampipe.io/js/tracker.js" data-beampipe-domain="brouwerijgeel.nl"></script>
+<!-- <script async defer src="https://beampipe.io/js/tracker.js" data-beampipe-domain="brouwerijgeel.nl"></script> -->
