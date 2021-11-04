@@ -1,7 +1,7 @@
-@import url('/css/fonts.min.css');
+@import url('fonts.css');
 
 /* @import url('/css/modules/splide.min.css'); */
-@import url('/css/modules/balloon.min.css');
+@import url('modules/balloon.min.css');
 
 
 /* Global styles: vars, native element overrides, and so on */
@@ -208,7 +208,7 @@ body {
   min-height: 40em;
   background-size: cover;
   background-position: center;
-  background-image: url("/i/about-us.jpg");
+  background-image: url("../i/about-us.jpg");
   /* margin-right: auto;
   align-self: center; */
 }
